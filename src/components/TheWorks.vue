@@ -5,7 +5,7 @@
 			<div class="featured__body">
 				<transition-group name="works-list">
 				<div class="featured__block block-featured" v-for="post in sortedPosts" :key="post.title">
-					<div class="block-featured_image"><a @click="$router.push(`/work/${post.id}`)"><img :src="`/posts/${post.path}/cover.png`" :alt="post.alt"></a></div>
+					<div class="block-featured_image"><a @click="$router.push(`/work/${post.id}`)"><img :src="`./posts/${post.path}/cover.png`" :alt="post.alt"></a></div>
 					<div class="block-featured__content">
 						<div class="block-featured__title"><a @click="$router.push(`/work/${post.id}`)">{{ post.title }}</a></div>
 						<div class="block-featured__info">

@@ -12,7 +12,7 @@
 					<div class="aboutme__skills skills">
 						<ul class="skills__list">
 							<li class="skills__item" v-for="skill in skills" :key="skill.id">
-								<BaseTooltip style="text-transform:uppercase;" :tooltip="skill.name"><img :src="`/skills/${skill.name}.svg`" :alt="skill.name"></BaseTooltip>
+								<BaseTooltip style="text-transform:uppercase;" :tooltip="skill.name"><img :src="`./skills/${skill.name}.svg`" :alt="skill.name"></BaseTooltip>
 							</li>
 						</ul>
 					</div>
