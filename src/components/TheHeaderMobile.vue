@@ -10,7 +10,7 @@
 					</div>
 					<div class="burger__content">
 						<ul class="burger__list">
-							<li v-for="item in items" :key="item.label" class="burger__item"><a :href="item.link">{{ item.label }}</a></li>
+							<li v-for="item in items" :key="item.label" class="burger__item"><a :href="item.link" @click.prevent="$router.push(item.link)">{{ item.label }}</a></li>
 						</ul>
 					</div>
 				</div>
