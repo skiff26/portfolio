@@ -35,7 +35,7 @@ export default {
 				},
 				{
 					alt: 'Portfolio',
-					link: 'https://skiff26.github.io/freebieagency/',
+					link: 'https://skiff26.github.io/portfolio/',
 					path: icons['website'],
 				},
 				{
