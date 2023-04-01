@@ -5,7 +5,7 @@
 				<div class="aboutme__content">
 					<div class="aboutme__title">Hi, I am Artem, Web Programmer</div>
 					<div class="aboutme__text">Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел различные бессплатные курсы с ютуба и личные проекты, которые позволили мне получить опыт в следующих областях:</div>
-					<a href="/ArtemKulchytskyiFrontendRu.pdf/" download="ArtemKulchytskyiFrontendRu.pdf"  class="aboutme__btn">Download Resume</a>
+					<a href="https://github.com/skiff26/portfolio/raw/ae2d2771c3091d9109a43f4611fe94e5d5b749f1/ArtemKulchytskyiFrontendRu.pdf" download  class="aboutme__btn">Download Resume</a>
 				</div>
 				<div class="aboutme__image">
 					<div class="aboutme__skills skills">
