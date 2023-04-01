@@ -5,10 +5,9 @@
 				<div class="aboutme__content">
 					<div class="aboutme__title">Hi, I am Artem, Web Programmer</div>
 					<div class="aboutme__text">Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел различные бессплатные курсы с ютуба и личные проекты, которые позволили мне получить опыт в следующих областях:</div>
-					<a href="/aboutme.tx" download="" class="aboutme__btn">Download Resume</a>
+					<a href="/" download="/Artem Kulchytskyi frontend ru.pdf" class="aboutme__btn">Download Resume</a>
 				</div>
 				<div class="aboutme__image">
-					<!-- <img src="/img/person.png" alt="Author"> -->
 					<div class="aboutme__skills skills">
 						<ul class="skills__list">
 							<li class="skills__item" v-for="skill in skills" :key="skill.id">
