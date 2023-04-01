@@ -862,6 +862,15 @@ background: url('/img/bg.jpg') center;
 			&:active{
 				transform: scale(0.95) rotateZ(1.7deg);
 			}
+			@media (max-width: 1024px){
+				&:hover{
+					border: none;
+					transform: none;
+				}
+				&:active{
+					transform: none;
+				}
+			}
 		}
 }
 .card {

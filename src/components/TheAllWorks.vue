@@ -6,7 +6,7 @@
 				<ul class="works__cards">
 					<li class="works__card card" @click="$router.push(`/work/${work.id}`)" v-for="(work) in works" :key="work">
 						<h4 class="card__title">{{ work.title }}</h4>
-						<div class="card__img"><img :src="`./posts/${work.path}/cover.png`" :alt="work.alt"></div>
+						<div class="card__img"><img :src="`./posts/${work.path}/cover.png`" loading="lazy" :alt="work.alt"></div>
 						<div class="card__info">
 							<p class="card__theme">{{ work.theme }}</p>
 							<p class="card__year">{{ work.year }}</p>
