@@ -274,6 +274,10 @@ export default {
 				},
 				{ 
 				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
 				technology: 'JavaScript',
 				},
 				{ 
@@ -307,6 +311,10 @@ export default {
 				{ 
 					bgColor: '',
 					technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
 				},
 				{ 
 				bgColor: '',
@@ -349,6 +357,10 @@ export default {
 				},
 				{ 
 				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
 				technology: 'JavaScript',
 				},
 				{ 
@@ -365,6 +377,40 @@ export default {
 		},
 		{
 			id: 9,
+			photos: ['00','01','02','03'],
+			link: 'https://skiff26.github.io/SpaceX/',
+			ghLink: 'https://github.com/skiff26/SpaceX',
+			technologies: [
+				{ 
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				}
+			],
+			title: 'SpaceX - сайт о компании',
+			theme: 'HTML codding',
+			year: '2023',
+			path: "spacex",
+			alt: 'SpaceX',
+			text: 'Сайт на тему ракет и космоса. Красивый и современный дизайн, интересные анимации при наведении на крупные объекты. Хороший адаптив под любые экраны. Стили написаны по методологии БЭМ.',
+		},
+		{
+			id: 10,
 			info: 'Приложение размещено на GitHub Pages, который работает только с протоколом HTTPS, тогда как сервер, с которого получаем данные, работает только с протоколом HTTP. Протокол HTTPS - это защищенный протокол, который обеспечивает безопасную передачу данных между веб-сайтом и его посетителем. Он использует шифрование для защиты конфиденциальности данных, таких как логины и пароли, а также для предотвращения несанкционированного доступа к этим данным. В связи с этим работа приложения ограничена.',
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/check-info-vue/#/location',
@@ -396,7 +442,7 @@ export default {
 			fullText: 'Input для ввода IP, с проверкой на правильность ввода, и кнопка получение информации, которая автоматически меняет свой текст от ситуации. Приложение содержит интеграцию API сторонних сервисов. Есть красивый loader.',
 		},
 		{
-			id: 10,
+			id: 11,
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/check-info-vue/#/weather',
 			ghLink: 'https://github.com/skiff26/check-info-vue',
