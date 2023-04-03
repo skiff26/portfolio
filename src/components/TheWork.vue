@@ -7,7 +7,7 @@
 				<h3 class="work__left-type">{{ post.theme }}</h3>
 			</div>
 			<div class="work__left-text">{{ post.text }} <span v-if="post.fullText">{{ post.fullText }}</span></div>
-			<div v-show="post.info" class="work__left-info">{{ post.info }}</div>
+			<div v-show="post.info" class="work__left-info" v-html="post.info"></div>
 		</div>
 		<div class="work__center">
 			<h1 class="work__title">{{ post.title }}</h1>
