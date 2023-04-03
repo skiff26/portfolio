@@ -254,7 +254,7 @@ export default {
 			id: 6,
 			photos: ['00','01','02','03','04','05','06','07'],
 			link: 'http://localhost:5173/portfolio/#/	',
-			ghLink: 'https://github.com/skiff26/portfolio',
+			ghLink: 'https://github.com/skiff26/portfolio/tree/gh-pages',
 			technologies: [
 				{ 
 				bgColor: '',
@@ -298,7 +298,7 @@ export default {
 			id: 7,
 			photos: ['00','01','02'],
 			link: 'https://skiff26.github.io/chess/',
-			ghLink: 'https://github.com/skiff26/chess',
+			ghLink: 'https://github.com/skiff26/chess/tree/gh-pages',
 			technologies: [
 				{ 
 				bgColor: '',
@@ -337,7 +337,7 @@ export default {
 			id: 8,
 			photos: ['00','01','02','03'],
 			link: 'https://artemkulczycki.github.io/timefrom/',
-			ghLink: 'https://github.com/artemkulczycki/timefrom',
+			ghLink: 'https://github.com/artemkulczycki/timefrom/tree/gh-pages',
 			technologies: [
 				{ 
 				bgColor: '',
