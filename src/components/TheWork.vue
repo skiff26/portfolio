@@ -1,12 +1,12 @@
 <template>
 	<div class="work">
 		<div class="work__left">
-			<h2 class="work__second-title">Краткая информация о проекте</h2>
+			<h2 class="work__second-title">Информация о проекте</h2>
 			<div class="work__block-year-type">
 				<h3 class="work__left-year">{{ post.year }}</h3>
 				<h3 class="work__left-type">{{ post.theme }}</h3>
 			</div>
-			<div class="work__left-text">{{ post.text }} <span v-if="post.fullText">{{ post.fullText }}</span></div>
+			<div class="work__left-text">{{ post.text }}<span v-if="post.fullText" v-html="post.fullText"></span></div>
 			<div v-show="post.info" class="work__left-info" v-html="post.info"></div>
 		</div>
 		<div class="work__center">
@@ -71,7 +71,7 @@ export default {
 			const post = posts[postId]
 			const photos = [...post.photos]
 			const technologies = [...post.technologies]
-			const bgColors = ['0b3ca5e3', '271d0be3', '11b2f1e3', '12a125e3', 'ca3522e3', 'a310cfe3', 'df9c1fe3', 'FF000099', 'FFA50099', 'FFFF0099', '00800099', '0000FF99', '80008099']
+			const bgColors = ['FFFF0099', 'FF990099', 'FFC0CB99', 'FFE4C499', 'FFF8DC99', 'DAA52099', 'FFA50099', 'FF450099', 'FF8C0099', 'FF634799', '8B000099', 'A0522D99', '2F4F4F99', '70809099', '0000FF99', '00FF7F99', '32CD3299', 'FF149399', 'FF69B499', 'FF00FF99', 'FF149399', 'FF6EB499', 'FF8C0099'];
 			
 			const state = reactive({
 				bgColor: '',

@@ -7,10 +7,11 @@
 				<div class="featured__block block-featured" v-for="post in sortedPosts" :key="post.title">
 					<div class="block-featured_image"><a @click="$router.push(`/work/${post.id}`)"><img :src="`./posts/${post.path}/cover.png`" :alt="post.alt"></a></div>
 					<div class="block-featured__content">
-						<div class="block-featured__title"><a @click="$router.push(`/work/${post.id}`)">{{ post.title }}</a></div>
+						<div class="block-featured__title"><a @click="$router.push(`/work/${post.id}`)" v-html="post.title"></a></div>
 						<div class="block-featured__info">
 							<div class="block-featured__years" @click="sortByYear">{{ post.year }}</div>
 							<div class="block-featured__type" @click="sortByTheme">{{ post.theme }}</div>
+							<div class="block-featured__star" v-show="post.star">Best work</div>
 						</div>
 						<div class="block-featured__text">{{ post.text }}</div>
 					</div>
