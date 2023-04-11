@@ -10,7 +10,7 @@
 			<div v-show="post.info" class="work__left-info" v-html="post.info"></div>
 		</div>
 		<div class="work__center">
-			<h1 class="work__title">{{ post.title }}</h1>
+			<h1 class="work__title" v-html="post.title"></h1>
 			<div class="swiper-container">
 				<Swiper
 				:modules="modules"
