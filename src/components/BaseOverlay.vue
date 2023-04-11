@@ -5,7 +5,7 @@
  .bg {
 	 display: block;
 	 position: absolute;
-	 z-index: 10;
+	 z-index: 3;
 	 width: 100vw;
 	 top: 60px;
 	 height: calc(100vh - 60px - 160px);
