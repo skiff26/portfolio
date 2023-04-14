@@ -53,11 +53,17 @@ export default {
 		},
 		openDialog(post){
 			this.post = post
-			document.body.classList.add('lock');
+			const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
+			
+			document.body.style.paddingRight = scrollbarWidth + 'px';
+			
+			document.body.classList.add('lock')
 		},
 		closeDialog(){
 			this.post = {}
-			document.body.classList.remove('lock');
+			document.body.style.paddingRight = 0;
+	
+			document.body.classList.remove('lock')
 		}
 	},
 	mounted(){
@@ -74,4 +80,5 @@ export default {
 .works-list-leave-to {
   opacity: 0;
   transform: translateY(30px);
-}</style>
+}
+</style>

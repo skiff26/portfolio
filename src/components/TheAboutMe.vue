@@ -1,5 +1,5 @@
 <template>
-	<div class="main__aboutme aboutme" id="aboutme">
+	<div class="main__aboutme aboutme" id="aboutme" v-if="true">
 		<div class="aboutme__container">
 			<div class="aboutme__body">
 				<div class="aboutme__content">

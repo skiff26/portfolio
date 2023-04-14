@@ -258,7 +258,7 @@ export default {
 			id: 6,
 			photos: ['00','01','02','03','04','05','06','07'],
 			link: 'http://localhost:5173/portfolio/#/	',
-			ghLink: 'https://github.com/skiff26/portfolio/tree/gh-pages',
+			ghLink: 'https://github.com/skiff26/portfolio',
 			technologies: [
 				{ 
 				bgColor: '',
@@ -346,13 +346,13 @@ export default {
 			alt: 'Minesweeper',
 			text: 'Это веб-игра Minesweeper (Сапёр), созданная для развития логических навыков. Цель игры - разминировать поле, не подорвавшись на рандомно расставленных минах. В игре есть звуковое сопровождение, которое',
 			fullText: 'воспроизводится при разминировании поля и взрыве мины.<br>После завершения игры появляется соответствующее диалоговое окно, сообщающее о победе или поражении. Игрок выигрывает, если все поля успешно разминированы.<br>В игре также присутствует меню с настройками, позволяющее выключить звуковое сопровождение, показать все мины и изменить цветовую тему фона.<br>Кроме того, в игре есть кнопка "Поделиться" в социальных сетях, настроенная с помощью <em>meta</em>-тегов.',
-			info: 'К приложению подключенна Google аналитика.',
+			info: 'К приложению подключенна Google аналитика.<br>Настройки сохраняются после обновления страницы.',
 		},
 		{
 			id: 8,
 			photos: ['00','01','02'],
 			link: 'https://skiff26.github.io/chess/',
-			ghLink: 'https://github.com/skiff26/chess/tree/gh-pages',
+			ghLink: 'https://github.com/skiff26/chess',
 			technologies: [
 				{ 
 				bgColor: '',
@@ -420,6 +420,10 @@ export default {
 				{ 
 				bgColor: '',
 				technology: 'VUE.JS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Google Analytics',
 				}
 			],
 			title: 'Timefrom - Узнать сколько прошло времени',
