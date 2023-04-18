@@ -1,15 +1,15 @@
 <template>
 	<div class="work">
-		<div class="work__left">
+		<section class="work__left">
 			<h2 class="work__second-title">Информация о проекте</h2>
 			<div class="work__block-year-type">
-				<h3 class="work__left-year">{{ post.year }}</h3>
-				<h3 class="work__left-type">{{ post.theme }}</h3>
+				<time class="work__left-year">{{ post.year }}</time>
+				<strong class="work__left-type">{{ post.theme }}</strong>
 			</div>
-			<div class="work__left-text">{{ post.text }}<span v-if="post.fullText" v-html="post.fullText"></span></div>
-			<div v-show="post.info" class="work__left-info" v-html="post.info"></div>
-		</div>
-		<div class="work__center">
+			<div class="work__left-text">{{ post.text }}<p v-if="post.fullText" v-html="post.fullText"></p></div>
+			<p v-show="post.info" class="work__left-info" v-html="post.info"></p>
+		</section>
+		<section class="work__center">
 			<h1 class="work__title" v-html="post.title"></h1>
 			<div class="swiper-container">
 				<Swiper
@@ -38,13 +38,13 @@
 				<BaseIcon class="work__icon" name="website" wh="100"/>
 			</a>
 		</div>
-		</div>
-		<div class="work__right">
+		</section>
+		<section class="work__right">
 			<h2 class="work__second-title">Технологии</h2>
 			<ul class="work__technologies">
 				<li class="work__technology" v-for="technology in technologies" :style="{backgroundColor: '#' + technology.bgColor, boxShadow: '0px 0px 20px 5px #' + technology.bgColor }" :key="technology">{{ technology.technology }}</li>
 			</ul>
-		</div>
+		</section>
 	</div>
 </template>
 <script>

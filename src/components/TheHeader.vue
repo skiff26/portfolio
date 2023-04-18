@@ -2,13 +2,11 @@
 	<header class="header" :class="{'transparent': transparent}">
 		<div class="header__container">
 			<nav class="header__nav nav">
-				<div class="nav__list">
-					<ul class="nav__items">
-						<li class="nav__item" :class="{'transparent': transparent}" v-for="item in items" :key="item.label">
-							<a :href="item.link" @click.prevent="$router.push(item.link)" class="nav__link">{{ item.label }}</a>
-						</li>
-					</ul>
-				</div>
+				<ul class="nav__items">
+					<li class="nav__item" :class="{'transparent': transparent}" v-for="item in items" :key="item.label">
+						<a :href="item.link" @click.prevent="$router.push(item.link)" class="nav__link">{{ item.label }}</a>
+					</li>
+				</ul>
 			</nav>
 		</div>
 	</header>

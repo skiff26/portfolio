@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer wow animate__animated animate__fadeIn" :class="{'transparent': transparent}">
 		<div class="footer__container">
-			<div class="footer__media media ">
+			<nav class="footer__media media ">
 				<ul class="media__list">
 					<li class="media__item" :class="{'transparent': transparent}" v-for="item in media" :key="item.alt">
 						<a :href="item.link">
@@ -9,7 +9,7 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 			<div class="footer__copy" :class="{'transparent' : transparent}">
 				Copyright ©{{ year }} All rights reserved 
 			</div>

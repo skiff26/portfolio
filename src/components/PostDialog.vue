@@ -1,14 +1,14 @@
 <template>
-	<div class="post">
+	<article class="post">
 		<BaseOverlayDialog @click="$emit('close')" />
 		<div class="post__container">
-			<a class="post__exit" @click="$emit('close')"><BaseIcon name="exit" color="white"/></a>
-			<h4 class="post__title" v-html="post.title"></h4>
+			<button class="post__exit" @click="$emit('close')"><BaseIcon name="exit" color="white"/></button>
+			<h3 class="post__title" v-html="post.title"></h3>
 			<div class="post__category">{{ post.category }}</div>
 			<div class="post__content" v-html="post.content"></div>
-			<div class="post__date">{{ post.date }}</div>
+			<time class="post__date">{{ post.date }}</time>
 		</div>
-	</div>
+	</article>
 </template>
 <script>
 import BaseIcon from './BaseIcon.vue'

@@ -1,10 +1,10 @@
 <template>
-	<div class="main__aboutme aboutme" id="aboutme" v-if="true">
+	<section class="main__aboutme aboutme" id="aboutme">
 		<div class="aboutme__container">
 			<div class="aboutme__body">
 				<div class="aboutme__content">
-					<div class="aboutme__title">Hi, I am Artem, Web Programmer</div>
-					<div class="aboutme__text">Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел различные бессплатные курсы с ютуба и личные проекты, которые позволили мне получить опыт в следующих областях:</div>
+					<h1 class="aboutme__title">Hi, I am Artem, Web Programmer</h1>
+					<p class="aboutme__text">Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел различные бессплатные курсы с ютуба и личные проекты, которые позволили мне получить опыт в следующих областях:</p>
 					<!-- <a href="https://github.com/skiff26/portfolio/raw/gh-pages/Artem%20Kulchytskyi%20frontend%20ru.pdf" download class="aboutme__btn">Download Resume</a> -->
 					<a href="mailto:artem.kulchitsky@gmail.com" class="aboutme__btn">Связаться со мной</a>
 				</div>
@@ -19,7 +19,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </template>
 <script>
 import BaseTooltip from '../components/BaseTooltip.vue'

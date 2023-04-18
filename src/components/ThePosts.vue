@@ -1,26 +1,26 @@
 <template>
-	<div class="main__posts posts">
+	<section class="main__posts posts">
 		<div class="posts__container">
 			<div class="posts__body">
 				<div class="posts__topblock">
-					<div class="posts__recent">Recent posts</div>
+					<h2 class="posts__recent">Recent posts</h2>
 					<a class="posts__btn-more" @click="showMore">{{ btnText }}</a>
 				</div>
 				<div class="posts__content">
 					<transition-group name="works-list">
-						<div class="posts__item post-block" v-for="post in posts" :key="post.id">
+						<article class="posts__item post-block" v-for="post in posts" :key="post.id">
 							<h3 class="post-block__title" @click="openDialog(post)"><a @click.prevent href="#">{{ post.title }}</a></h3>
 							<div class="post-block__info">
-								<div class="post-block__date">{{ post.date }}</div>
-								<div class="post-block__post">{{ post.category }}</div>
+								<time class="post-block__date">{{ post.date }}</time>
+								<p class="post-block__post">{{ post.category }}</p>
 							</div>
-							<div class="post-block__text">{{ post.text }}</div>
-						</div>
+							<p class="post-block__text">{{ post.text }}</p>
+						</article>
 					</transition-group>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<teleport to='body'>
 		<transition>
 			<PostDialog v-if="post.text" :post="post" @close="closeDialog"/>
@@ -55,13 +55,13 @@ export default {
 			this.post = post
 			const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
 			
-			document.body.style.paddingRight = scrollbarWidth + 'px';
+			document.body.style.paddingRight = scrollbarWidth + 'px'
 			
 			document.body.classList.add('lock')
 		},
 		closeDialog(){
 			this.post = {}
-			document.body.style.paddingRight = 0;
+			document.body.style.paddingRight = 0
 	
 			document.body.classList.remove('lock')
 		}

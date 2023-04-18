@@ -2,9 +2,9 @@
 	<div class="wrapper">
 		<TheHeader v-if="!state.isSmall" :transparent="transparent"/>
 		<TheHeaderMobile v-else :transparent="transparent"/>
-		<div class="page">
+		<main class="page">
 			<TheWork />
-		</div>
+		</main>
 		<TheFooter :transparent="transparent"/>
 	</div>
 </template>

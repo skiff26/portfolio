@@ -1,27 +1,27 @@
 <template>
-	<div id="works" class="main__featured featured">
+	<section id="works" class="main__featured featured">
 		<div class="featured__container">
-			<div class="featured__featured">Featured works</div>
+			<h2 class="featured__featured">Featured works</h2>
 			<div class="featured__body">
 				<transition-group name="works-list">
-				<div class="featured__block block-featured" v-for="post in sortedPosts" :key="post.title">
+				<article class="featured__block block-featured" v-for="post in sortedPosts" :key="post.title">
 					<div class="block-featured_image"><a @click="$router.push(`/work/${post.id}`)"><img :src="`./posts/${post.path}/cover.png`" :alt="post.alt"></a></div>
 					<div class="block-featured__content">
-						<div class="block-featured__title"><a @click="$router.push(`/work/${post.id}`)" v-html="post.title"></a></div>
+						<h3 class="block-featured__title"><a @click="$router.push(`/work/${post.id}`)" v-html="post.title"></a></h3>
 						<div class="block-featured__info">
-							<div class="block-featured__years" @click="sortByYear">{{ post.year }}</div>
-							<div class="block-featured__type" @click="sortByTheme">{{ post.theme }}</div>
+							<time class="block-featured__years" @click="sortByYear">{{ post.year }}</time>
+							<strong class="block-featured__type" @click="sortByTheme">{{ post.theme }}</strong>
 							<div class="block-featured__star" v-show="post.star">Best work</div>
 						</div>
-						<div class="block-featured__text">{{ post.text }}</div>
+						<p class="block-featured__text">{{ post.text }}</p>
 					</div>
-				</div>
+				</article>
 			</transition-group>
 			</div>
 			<button v-if="!isShownMore" class="featured__more" @click="addPosts">Show all</button>
 			<button v-else class="featured__more" @click="hidePosts">Show less</button>
 		</div>
-	</div>								
+	</section>								
 </template>
 <script>
 import works from '../works'
@@ -31,7 +31,8 @@ export default {
 			isShownMore: false,
 			sorted: false,
 			posts: works.posts,
-			otherPosts: works.otherPosts
+			otherPosts: works.otherPosts,
+			totalWorks: [...works.posts, ...works.otherPosts].length
 		}
 	},
 	methods: {

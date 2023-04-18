@@ -1,5 +1,5 @@
 <template>
-	<div class="contact">
+	<main class="contact">
 		<div class="contact__content">
 			<h1 class="contact__title">Связаться со мной</h1>
 			<div class="contact__main">
@@ -15,7 +15,7 @@
 				<div v-show="error" class="contact__error">{{ error }}</div>
 			</div>
 		</div>
-	</div>
+	</main>
 </template>
 
 <style scoped lang="scss">

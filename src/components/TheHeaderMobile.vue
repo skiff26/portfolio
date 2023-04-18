@@ -8,11 +8,11 @@
 						<h2 class="burger__title">Navigation</h2>
 						<BaseIcon @click="isOpen = false" class="burger__close" name="exit" wh="35"/>
 					</div>
-					<div class="burger__content">
+					<nav class="burger__content">
 						<ul class="burger__list">
 							<li v-for="item in items" :key="item.label" class="burger__item"><a :href="item.link" @click.prevent="$router.push(item.link)">{{ item.label }}</a></li>
 						</ul>
-					</div>
+					</nav>
 				</div>
 			</transition>
 		</div>

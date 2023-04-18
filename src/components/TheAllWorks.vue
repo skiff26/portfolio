@@ -1,27 +1,25 @@
 <template>
 	<main class="page">
-		<div class="works">
-			<h2 class="works__title">My works</h2>
+		<section class="works">
+			<h1 class="works__title">My works</h1>
 			<select name="filter" class="works__filter" v-model="selectedSort" id="filter" @change="changeOptions">
 				<option disabled value="">Выберите из списка</option>
-				<option v-for="option in options" :key="option.value" :value="option.value">
-				{{ option.name }}
-				</option>
+				<option v-for="option in options" :key="option.value" :value="option.value">{{ option.name }}</option>
 			</select>
 			<div class="works__content"> 
 				<ul class="works__cards">
 					<li class="works__card card" @click="$router.push(`/work/${work.id}`)" v-for="(work) in works" :key="work">
-						<h4 class="card__title" v-html="work.title"></h4>
-						<h5 class="card__star" v-show="work.star">BEST</h5>
+						<h2 class="card__title" v-html="work.title"></h2>
+						<h3 class="card__star" v-show="work.star">BEST</h3>
 						<div class="card__img"><img :src="`./posts/${work.path}/cover.png`" loading="lazy" :alt="work.alt"></div>
 						<div class="card__info">
-							<p class="card__theme">{{ work.theme }}</p>
-							<p class="card__year">{{ work.year }}</p>
+							<strong class="card__theme">{{ work.theme }}</strong>
+							<time class="card__year">{{ work.year }}</time>
 						</div>
 					</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 	</main>
 </template>
 <style scoped lang="scss">
