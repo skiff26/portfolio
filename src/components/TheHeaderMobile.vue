@@ -1,7 +1,7 @@
 <template>
 	<header class="header" :class="{'transparent': transparent}">
 		<div class="header__container" :class="{'transparent': transparent}">
-			<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="30"/></button>
+			<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="30" :color="transparent ? 'white' : 'black'"/></button>
 			<transition>
 			<BaseIcon v-if="!isOpen" @click="isOpen = true" class="header__burger" :class="{'transparent': transparent}" name="list" wh="40"/>
 				<div v-else class="header__burger burger">
@@ -17,14 +17,24 @@
 				</div>
 			</transition>
 		</div>
+		<teleport to='body'>
+			<transition>
+				<SettingsDialog v-if="settingsStatus" />
+			</transition>
+		</teleport>
 	</header>
 </template>
 <script>
 import BaseIcon from './BaseIcon.vue'
+import SettingsDialog from './SettingsDialog.vue'
+import { mapGetters } from 'vuex'
 export default {
 	props: ['transparent'],
 	components: {
-		BaseIcon
+		BaseIcon, SettingsDialog
+	},
+	computed: {
+		...mapGetters(['settingsStatus'])
 	},
 	data () {
 		return {

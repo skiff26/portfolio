@@ -399,7 +399,7 @@
 .post {
 	&__container {
 		position: fixed;
-		z-index: 5;
+		z-index: 10;
 		max-width: 800px;
 		height: max-content;
 		max-height: 80vh;

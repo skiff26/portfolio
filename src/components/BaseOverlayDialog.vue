@@ -1,11 +1,11 @@
 <template>
-	<div class="bgDialog"></div>
+	<div class="bg"></div>
 </template>
 <style scoped lang="scss">
- .bgDialog {
+ .bg {
 	 display: block;
 	 position: fixed;
-	 z-index: 15;
+	 z-index: 4;
 	 top: 0;
 	 right: 0;
 	 width: 100vw;
