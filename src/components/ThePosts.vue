@@ -8,7 +8,7 @@
 				</div>
 				<div class="posts__content">
 					<transition-group name="works-list">
-						<article class="posts__item post-block" v-for="post in posts" :key="post.id">
+						<article class="posts__item post-block" v-for="post in postsLang" :key="post.id">
 							<h3 class="post-block__title" @click="openDialog(post)"><a @click.prevent href="#">{{ post.title }}</a></h3>
 							<div class="post-block__info">
 								<time class="post-block__date">{{ post.date }}</time>
@@ -29,6 +29,7 @@
 </template>
 <script>
 import posts from '../posts'
+import postsEn from '../posts-en'
 import PostDialog from './PostDialog.vue'
 export default {
 	components: { PostDialog },
@@ -40,15 +41,27 @@ export default {
 			btnText: 'View all',
 		}
 	},
+	computed: {
+		postsLang(){
+			if (this.btnMore){
+				return this.$store.getters.eng
+				? this.posts = postsEn.posts
+				: this.posts = posts.posts
+			} 
+			return this.$store.getters.eng
+				? this.posts = postsEn.posts.slice(0, 2)
+				: this.posts = posts.posts.slice(0, 2)
+		}
+	},
 	methods: {
 		showMore(){
 			this.btnMore = !this.btnMore
 			if(this.btnMore){
 				this.btnText = 'View less'
-				this.posts = [...this.posts, ...posts.posts.slice(2)]
+				this.postsLang()
 			} else {
 				this.btnText = 'View all'
-				this.posts = posts.posts.slice(0, 2)
+				this.postsLang()
 			}
 		},
 		openDialog(post){
@@ -67,7 +80,11 @@ export default {
 		}
 	},
 	mounted(){
-		this.posts = posts.posts.slice(0, 2)
+		if (this.$store.getters.eng){
+			this.posts = postsEn.posts.slice(0, 2)
+		} else {
+			this.posts = posts.posts.slice(0, 2)
+		}
 	}
 }
 </script>

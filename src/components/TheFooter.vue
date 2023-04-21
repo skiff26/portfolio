@@ -46,6 +46,9 @@ export default {
 			]
 		}
 	},
+	mounted(){
+		this.$store.dispatch('setSaveLanguage')
+	},
 	computed: {
 		year () {
 			let year = new Date()

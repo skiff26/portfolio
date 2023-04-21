@@ -31,21 +31,27 @@
 </style>
 <script>
 import works from '../works'
+import worksEn from '../works-en'
 export default {
 	data(){
 		return {
 			works: [...works.posts, ...works.otherPosts],
+			worksEn: [...worksEn.posts, ...worksEn.otherPosts],
 			options: [
 				{value: 'web', name: 'Web programming'},
 				{value: 'html', name: 'HTML codding'},
 				{value: 'all', name: 'Show all works'},
 			],
-			selectedSort: ''
+			selectedSort: '',
 		}
 	},
 	watch: {
 		selectedSort(newValue){
-			this.works = [...works.posts, ...works.otherPosts]
+			if (this.$store.getters.eng) {
+				this.works = [...worksEn.posts, ...worksEn.otherPosts]
+			} else {
+				this.works = [...works.posts, ...works.otherPosts]
+			}
 			let result = []
 			if (newValue === 'web'){
 				result = this.works.filter((work) => work.theme === 'Web programming')
@@ -56,9 +62,10 @@ export default {
 			} else {
 				return result
 			}
-		}
+		},
 	},
 	mounted(){
+		this.$store.dispatch('setSaveLanguage')
 		this.selectedSort = "web"
 	}
 }

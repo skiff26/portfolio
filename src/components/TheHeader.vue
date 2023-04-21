@@ -3,21 +3,31 @@
 		<div class="header__container">
 			<nav class="header__nav nav">
 				<ul class="nav__items">
-					<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="25"/></button>
+					<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="25" :color="transparent ? 'white' : 'black'"/></button>
 					<li class="nav__item" :class="{'transparent': transparent}" v-for="item in items" :key="item.label">
 						<a :href="item.link" @click.prevent="$router.push(item.link)" class="nav__link">{{ item.label }}</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
+		<teleport to='body'>
+			<transition>
+				<SettingsDialog v-if="settingsStatus" />
+			</transition>
+		</teleport>
 	</header>
 </template>
 <script>
 import BaseIcon from './BaseIcon.vue';
+import SettingsDialog from './SettingsDialog.vue';
+import { mapGetters } from 'vuex'
 
 export default {
     props: ["transparent"],
-	 components: { BaseIcon },
+	 components: { BaseIcon, SettingsDialog },
+	 computed: {
+		...mapGetters(['settingsStatus'])
+	},
     data() {
         return {
             items: [
@@ -45,7 +55,6 @@ export default {
             section.scrollIntoView({ behavior: "smooth" });
         }
     },
-    components: { BaseIcon }
 }
 </script>
 <style scoped lang="scss">

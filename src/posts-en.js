@@ -1,0 +1,36 @@
+export default {
+	posts: [
+		{
+			id: 0,
+			title: 'Vue 3 Composition API',
+			date: '21 Feb 2023',
+			category: 'Vue.js',
+			text: 'Vue 3 Composition API is a new way of creating components in Vue.js introduced in the latest version of the framework. The Composition API provides a new approach to organizing and writing code, making it easier to develop large and complex applications.',
+			content: '<p>Vue 3 Composition API is a new way of creating components in Vue.js introduced in the latest version of the framework. The Composition API provides a new approach to organizing and writing code, making it easier to develop large and complex applications.</p><p>In the Composition API, Vue components are combined in compositions, allowing developers to reuse code and avoid duplicating logic. This is achieved by separating component logic into individual functions called "hooks." Each hook is responsible for a specific aspect of the component`s behavior, such as event handling, API requests, or state management.</p><p>Additionally, the Composition API provides a convenient and flexible way to manage a component`s state. Instead of using instance properties and methods as in previous versions of Vue, developers can use functions like ref, reactive, computed, and watch to define and track a component`s state.</p><p>One of the main advantages of using the Composition API is that it allows for more flexible code organization, particularly in large projects. Additionally, it enables better code structuring, enhancing its readability and making it easier to test.</p><p>Overall, Vue 3 Composition API is an important update for Vue.js that simplifies the development of large and complex applications. It allows developers to organize their code more flexibly, manage a component`s state, and improve its readability. If you`re just starting to work with Vue.js, it is recommended to learn the Composition API and use it in your projects.</p>'
+		},
+		{
+			id: 1,
+			title: 'JavaScript updates',
+			date: '11 Jun 2023',
+			category: 'JavaScript',
+			text: 'JavaScript is one of the most popular programming languages used for creating interactive web applications. Recently, JavaScript has been constantly updated, allowing developers to use new features and improve the performance of their applications.',
+			content: '<p>JavaScript is one of the most popular programming languages used for creating interactive web applications. Recently, JavaScript has been constantly updated, allowing developers to use new features and improve the performance of their applications.</p><p>Among the latest updates to JavaScript, ECMAScript 2015 (ES6) stands out, which included many new features such as block-scoped variables, arrow functions, classes, object literal extensions, and destructuring.</p><p>This was followed by ECMAScript 2016 (ES7) with the exponentiation operator and Array.prototype.includes, ECMAScript 2017 (ES8) with async/await and Object.values/Object.entries, ECMAScript 2018 (ES9) with regex improvements and Spread/Rest properties, ECMAScript 2019 (ES10) with Array.prototype.flat/flatMap and Symbol.prototype.description, ECMAScript 2020 (ES11) with Nullish coalescing operator and Optional chaining operator, and finally ECMAScript 2021 (ES12) with Logical Assignment Operators and WeakRefs.</p><p>Overall, the updates to JavaScript allow developers to use new features and improve the performance of their applications. This makes the JavaScript programming language more powerful and versatile, which is a huge advantage for developing web applications.</p>'
+		}, 
+		{
+			id: 2,
+			title: 'HTML 5: New Features',
+			date: '21 Jun 2023',
+			category: 'HTML5',
+			text: 'HTML5 is the latest version of the markup language used for creating web pages and applications. It was released in 2014 and includes many new features and improvements compared to the previous version, HTML4.',
+			content: '<p>HTML5 is the latest version of the markup language used for creating web pages and applications. It was released in 2014 and includes many new features and improvements compared to the previous version, HTML4.</p><p>One of the main features of HTML5 is multimedia support, which allows audio and video to be embedded directly into web pages without the need for plugins like Flash. This makes web applications more accessible to users and improves their performance.</p><p>In addition, HTML5 also provides new markup elements such as header, footer, nav, section, article, which allow developers to more precisely define the content of web pages and make them more understandable for search engines.</p><p>HTML5 also includes capabilities for working with local storage and graphics, which allows for the creation of more complex web applications such as online games and graphic editors.</p><p>Moreover, HTML5 supports new form attributes such as placeholder, autocomplete, and autofocus, which make web forms more convenient for users.</p><p>Overall, HTML5 provides a wider range of possibilities for creating web applications and makes them more accessible and convenient for users. It is an important technology for web developers and continues to evolve and improve.</p>'
+		},
+		{
+			id: 3,
+			title: 'CSS - creating web pages',
+			date: '11 Feb 2023',
+			category: 'CSS3',
+			text: 'CSS3 is the latest version of Cascading Style Sheets (CSS) that includes numerous new features and enhancements that enable the creation of more interactive and aesthetically appealing websites.',
+			content: '<p>CSS3 is the latest version of Cascading Style Sheets (CSS) that includes numerous new features and enhancements that enable the creation of more interactive and aesthetically appealing websites.</p><p>One of the most notable new features of CSS3 is support for animations and transitions. These features allow for the creation of more dynamic and interactive websites using CSS, rather than relying on JavaScript or other scripts. Animations and transitions can be applied to various elements of a website, including text, images, backgrounds, and other elements.</p><p>CSS3 also includes the ability to create gradients, shadows, rounded corners, and other effects without the need for graphic images. This allows for reducing page size and speeding up website loading.</p><p>Other new features of CSS3 include support for multi-column layout, improved font support, and enhanced form capabilities.</p><p>However, it is important to note that not all browsers fully support all CSS3 features. This can result in websites looking different in different browsers. To address this issue, many developers use "polyfills" and other methods to ensure broader support for CSS3 features across different browsers.</p><p>Overall, CSS3 represents a significant improvement compared to previous versions of CSS, allowing for the creation of more beautiful, interactive, and faster websites. However, it is important to consider differences in feature support across different browsers to ensure a more consistent look and optimal website performance.</p>'
+		}
+	]
+}

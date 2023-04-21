@@ -25,13 +25,14 @@
 </template>
 <script>
 import works from '../works'
+import worksEn from '../works-en'
 export default {
 	data () {
 		return {
 			isShownMore: false,
 			sorted: false,
-			posts: works.posts,
-			otherPosts: works.otherPosts,
+			posts: [],
+			otherPosts: [],
 			totalWorks: [...works.posts, ...works.otherPosts].length
 		}
 	},
@@ -65,9 +66,26 @@ export default {
 	},
 	computed: {
 		sortedPosts(){
+			if (this.$store.getters.eng) {
+				if (this.isShownMore){
+					this.posts = [...worksEn.posts, ...worksEn.otherPosts]
+				} else {
+					this.posts = [...worksEn.posts]
+				}
+			} else {
+				if (this.isShownMore){
+					this.posts = [...works.posts, ...works.otherPosts]
+				} else {
+					this.posts = [...works.posts]
+				}
+			}
 			return [...this.posts];
 		}
 	},
+	mounted(){
+		this.$store.dispatch('setSaveLanguage')
+		this.sortedPosts
+	}
 }
 </script>
 <style scoped>

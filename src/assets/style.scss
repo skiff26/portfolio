@@ -78,7 +78,7 @@
 		align-items: center;
 		justify-content: center;
 		background: rgba(37, 36, 36, 0.904);
-		border-radius: 20px;
+		border-radius: 10px;
 		z-index: 100;
 		max-width: 300px;
 	}
@@ -95,7 +95,7 @@
 	}
 
 	&__title {
-		font-size: 28px;
+		font-size: 24px;
 		color: white;
 	}
 
@@ -111,6 +111,13 @@
 			&:hover{
 				background-color: red;
 				color: white;
+			}
+			&:disabled{
+				cursor: not-allowed;
+				&:hover{
+					background-color: rgba(255, 255, 255, 0.521);
+					color: white;
+				}
 			}
 		}
 	}
