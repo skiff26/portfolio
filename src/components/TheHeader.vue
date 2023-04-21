@@ -3,6 +3,7 @@
 		<div class="header__container">
 			<nav class="header__nav nav">
 				<ul class="nav__items">
+					<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="25"/></button>
 					<li class="nav__item" :class="{'transparent': transparent}" v-for="item in items" :key="item.label">
 						<a :href="item.link" @click.prevent="$router.push(item.link)" class="nav__link">{{ item.label }}</a>
 					</li>
@@ -12,35 +13,39 @@
 	</header>
 </template>
 <script>
+import BaseIcon from './BaseIcon.vue';
+
 export default {
-	props: ['transparent'],
-	data () {
-		return {
-			items: [
-				{
-					label: 'About Me',
-					link: '/',
-					rout: true
-				},
-				{	
-					label: 'Works',
-					link: '/works',
-					rout: false
-				},
-				{
-					label: 'Contact',
-					link: '/contact',
-					rout: true
-				}
-			]
-		}
-	},
-	methods: {
-		scrollToSection(sectionId) {
-			const section = document.getElementById(sectionId)
-			section.scrollIntoView({ behavior: 'smooth' })
-		}
-	}
+    props: ["transparent"],
+	 components: { BaseIcon },
+    data() {
+        return {
+            items: [
+                {
+                    label: "About Me",
+                    link: "/",
+                    rout: true
+                },
+                {
+                    label: "Works",
+                    link: "/works",
+                    rout: false
+                },
+                {
+                    label: "Contact",
+                    link: "/contact",
+                    rout: true
+                }
+            ]
+        };
+    },
+    methods: {
+        scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    },
+    components: { BaseIcon }
 }
 </script>
 <style scoped lang="scss">

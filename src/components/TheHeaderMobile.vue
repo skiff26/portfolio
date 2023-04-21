@@ -1,6 +1,7 @@
 <template>
 	<header class="header" :class="{'transparent': transparent}">
 		<div class="header__container" :class="{'transparent': transparent}">
+			<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="30"/></button>
 			<transition>
 			<BaseIcon v-if="!isOpen" @click="isOpen = true" class="header__burger" :class="{'transparent': transparent}" name="list" wh="40"/>
 				<div v-else class="header__burger burger">

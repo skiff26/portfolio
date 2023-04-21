@@ -4,72 +4,17 @@
 			<div class="aboutme__body">
 				<div class="aboutme__content">
 					<h1 class="aboutme__title">Hi, I am Artem, Web Programmer</h1>
-					<p class="aboutme__text">Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел различные бессплатные курсы с ютуба и личные проекты, которые позволили мне получить опыт в следующих областях:</p>
+					<p class="aboutme__text">Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел ряд бесплатных онлайн курсов и создавал собственные проекты, что позволило мне приобрести опыт в следующих областях:</p>
+					<!-- <p class="aboutme__text">As a web programmer, I am passionate about learning and developing my skills in web development. I have completed a number of free online courses and have created my own projects, which has allowed me to gain experience in the following areas:</p> -->
 					<!-- <a href="https://github.com/skiff26/portfolio/raw/gh-pages/Artem%20Kulchytskyi%20frontend%20ru.pdf" download class="aboutme__btn">Download Resume</a> -->
 					<a href="mailto:artem.kulchitsky@gmail.com" class="aboutme__btn">Связаться со мной</a>
 				</div>
-				<div class="aboutme__image">
-					<div class="aboutme__skills skills">
-						<ul class="skills__list">
-							<li class="skills__item" v-for="skill in skills" :key="skill.id">
-								<BaseTooltip style="text-transform:uppercase;" :tooltip="skill.name"><img :src="`./skills/${skill.name}.svg`" :alt="skill.name"></BaseTooltip>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<TheSkills />
 			</div>
 		</div>
 	</section>
 </template>
-<script>
-import BaseTooltip from '../components/BaseTooltip.vue'
-export default {
-	components: {
-		BaseTooltip
-	},
-	setup (){
-		const skills = [
-			{
-				id: 0,
-				name: 'html'
-			},
-			{
-				id: 1,
-				name: 'css'
-			},
-			{
-				id: 2,
-				name: 'sass'
-			},
-			{
-				id: 3,
-				name: 'bem'
-			},
-			{
-				id: 4,
-				name: 'js'
-			},
-			{
-				id: 5,
-				name: 'bootstrap'
-			},
-			{
-				id: 6,
-				name: 'tailwind'
-			},
-			{
-				id: 7,
-				name: 'vue'
-			},
-			{
-				id: 8,
-				name: 'git'
-			},
-		]
 
-		return {
-			skills
-		}
-	}
-}
+<script setup>
+import TheSkills from './TheSkills.vue';
 </script>
