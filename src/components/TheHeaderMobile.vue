@@ -1,9 +1,11 @@
 <template>
 	<header class="header" :class="{'transparent': transparent}">
 		<div class="header__container" :class="{'transparent': transparent}">
-			<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="30" :color="transparent ? 'white' : 'black'"/></button>
+			<button v-if="!transparent" class="nav__lang" @click="$store.commit('toggleSettings')">
+				<BaseIcon name="website" wh="30" :color="transparent ? 'white' : 'black'"/>
+			</button>
 			<transition>
-			<BaseIcon v-if="!isOpen" @click="isOpen = true" class="header__burger" :class="{'transparent': transparent}" name="list" wh="40"/>
+				<BaseIcon v-if="!isOpen" @click="isOpen = true" class="header__burger" :class="{'transparent': transparent}" name="list" wh="40"/>
 				<div v-else class="header__burger burger">
 					<div class="burger__header">
 						<h2 class="burger__title">Navigation</h2>
@@ -11,7 +13,9 @@
 					</div>
 					<nav class="burger__content">
 						<ul class="burger__list">
-							<li v-for="item in items" :key="item.label" class="burger__item"><a :href="item.link" @click.prevent="$router.push(item.link)">{{ item.label }}</a></li>
+							<li v-for="item in items" :key="item.label" class="burger__item">
+								<a :href="item.link" @click.prevent="$router.push(item.link)">{{ item.label }}</a>
+							</li>
 						</ul>
 					</nav>
 				</div>

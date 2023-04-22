@@ -17,9 +17,7 @@ import BaseIcon from './BaseIcon.vue';
 import BaseOverlayDialog from './BaseOverlayDialog.vue';
 import { useStore } from 'vuex'
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
 const store = useStore()
-const route = useRoute()
 const text = computed(() => {
 	return store.getters.eng 
 		? 'Choose language'

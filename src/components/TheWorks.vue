@@ -24,6 +24,7 @@
 	</section>								
 </template>
 <script>
+import { mapGetters } from 'vuex'
 import works from '../works'
 import worksEn from '../works-en'
 export default {
@@ -31,6 +32,7 @@ export default {
 		return {
 			isShownMore: false,
 			sorted: false,
+			sortedByTheme: false,
 			posts: [],
 			otherPosts: [],
 			totalWorks: [...works.posts, ...works.otherPosts].length
@@ -62,29 +64,27 @@ export default {
 			} else {
 				this.posts.sort((a, b) => a.theme.localeCompare(b.theme));
 			}
+		},
+		setLanguage(){
+			this.$store.dispatch('setSaveLanguage');
+			const store = this.$store.getters.eng;
+			this.posts = store ? worksEn.posts : works.posts;
+			this.otherPosts = store ? worksEn.otherPosts : works.otherPosts;
+		}
+	},
+	watch: {
+		eng(){
+			this.setLanguage()
 		}
 	},
 	computed: {
 		sortedPosts(){
-			if (this.$store.getters.eng) {
-				if (this.isShownMore){
-					this.posts = [...worksEn.posts, ...worksEn.otherPosts]
-				} else {
-					this.posts = [...worksEn.posts]
-				}
-			} else {
-				if (this.isShownMore){
-					this.posts = [...works.posts, ...works.otherPosts]
-				} else {
-					this.posts = [...works.posts]
-				}
-			}
 			return [...this.posts];
-		}
+		},
+		...mapGetters(['eng'])
 	},
 	mounted(){
-		this.$store.dispatch('setSaveLanguage')
-		this.sortedPosts
+		this.setLanguage()
 	}
 }
 </script>

@@ -3,28 +3,23 @@
 		<div class="header__container">
 			<nav class="header__nav nav">
 				<ul class="nav__items">
-					<button class="nav__lang" @click="$store.commit('toggleSettings')"><BaseIcon name="language" wh="25" :color="transparent ? 'white' : 'black'"/></button>
+					<LanguageSelect class="nav__lang" v-if="!transparent" :options="options" :selected="selected" @select="optionSelect"/>
 					<li class="nav__item" :class="{'transparent': transparent}" v-for="item in items" :key="item.label">
 						<a :href="item.link" @click.prevent="$router.push(item.link)" class="nav__link">{{ item.label }}</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
-		<teleport to='body'>
-			<transition>
-				<SettingsDialog v-if="settingsStatus" />
-			</transition>
-		</teleport>
 	</header>
 </template>
 <script>
 import BaseIcon from './BaseIcon.vue';
-import SettingsDialog from './SettingsDialog.vue';
+import LanguageSelect from './LanguageSelect.vue';
 import { mapGetters } from 'vuex'
 
 export default {
     props: ["transparent"],
-	 components: { BaseIcon, SettingsDialog },
+	 components: { BaseIcon, LanguageSelect },
 	 computed: {
 		...mapGetters(['settingsStatus'])
 	},
@@ -46,15 +41,24 @@ export default {
                     link: "/contact",
                     rout: true
                 }
-            ]
+            ],
+				selected: 'Выбрать язык',
+				options: [
+					{name: 'English', value: 1},
+					{name: 'Русский', value: 2},
+				],
         };
     },
     methods: {
-        scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: "smooth" });
-        }
+		  optionSelect(option){
+				this.selected = option.name
+				this.city = option.name
+			},	
     },
+	 mounted(){
+		this.$store.dispatch('setSaveLanguage')
+		this.selected = this.$store.getters.eng ? "English" : "Русский"
+	 }
 }
 </script>
 <style scoped lang="scss">
