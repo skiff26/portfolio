@@ -5,9 +5,9 @@
 			<div class="featured__body">
 				<transition-group name="works-list">
 				<article class="featured__block block-featured" v-for="post in sortedPosts" :key="post.title">
-					<div class="block-featured_image"><a @click="$router.push(`/work/${post.id}`)"><img :src="`./posts/${post.path}/cover.png`" :alt="post.alt"></a></div>
+					<div class="block-featured_image"><router-link :to="{ name: 'work', params: { id: post.id }, query: { title: post.title } }"><img :src="`./posts/${post.path}/cover.png`" :alt="post.alt"></router-link></div>
 					<div class="block-featured__content">
-						<h3 class="block-featured__title"><a @click="$router.push(`/work/${post.id}`)" v-html="post.title"></a></h3>
+						<h3 class="block-featured__title"><router-link :to="{ name: 'work', params: { id: post.id }, query: { title: post.title } }" v-html="post.title"></router-link></h3>
 						<div class="block-featured__info">
 							<time class="block-featured__years" @click="sortByYear">{{ post.year }}</time>
 							<strong class="block-featured__type" @click="sortByTheme">{{ post.theme }}</strong>

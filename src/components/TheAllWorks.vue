@@ -8,15 +8,17 @@
 			</select>
 			<div class="works__content"> 
 				<ul class="works__cards">
-					<li class="works__card card" @click="$router.push(`/work/${work.id}`)" v-for="(work) in works" :key="work">
-						<h2 class="card__title" v-html="work.title"></h2>
-						<h3 class="card__star" v-show="work.star">BEST</h3>
-						<div class="card__img"><img :src="`./posts/${work.path}/cover.png`" loading="lazy" :alt="work.alt"></div>
-						<div class="card__info">
-							<strong class="card__theme">{{ work.theme }}</strong>
-							<time class="card__year">{{ work.year }}</time>
-						</div>
-					</li>
+					<router-link :to="{ name: 'work', params: { id: work.id }, query: { title: work.title } } " v-for="work in works" :key="work">
+					<li class="works__card card">
+							<h2 class="card__title" v-html="work.title"></h2>
+							<h3 class="card__star" v-show="work.star">BEST</h3>
+							<div class="card__img"><img :src="`./posts/${work.path}/cover.png`" loading="lazy" :alt="work.alt"></div>
+							<div class="card__info">
+								<strong class="card__theme">{{ work.theme }}</strong>
+								<time class="card__year">{{ work.year }}</time>
+							</div>
+						</li>
+					</router-link>
 				</ul>
 			</div>
 		</section>
