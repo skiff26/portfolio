@@ -257,7 +257,7 @@ export default {
 		{
 			id: 6,
 			photos: ['00','01','02','03','04','05','06','07'],
-			link: 'http://localhost:5173/portfolio/#/	',
+			link: 'https://skiff26.github.io/portfolio/#/',
 			ghLink: 'https://github.com/skiff26/portfolio',
 			technologies: [
 				{ 

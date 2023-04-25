@@ -66,6 +66,7 @@ export default {
 			}
 		},
 		setLanguage(){
+			this.isShownMore = false;
 			this.$store.dispatch('setSaveLanguage');
 			const store = this.$store.getters.eng;
 			this.posts = store ? worksEn.posts : works.posts;
