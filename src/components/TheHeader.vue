@@ -5,7 +5,7 @@
 				<ul class="nav__items">
 					<LanguageSelect class="nav__lang" v-if="!transparent" :options="options" :selected="selected" @select="optionSelect"/>
 					<li class="nav__item" :class="{'transparent': transparent}" v-for="item in items" :key="item.label">
-						<a :href="item.link" @click.prevent="$router.push(item.link)" class="nav__link">{{ item.label }}</a>
+						<router-link :to="item.link" class="nav__link">{{ item.label }}</router-link>
 					</li>
 				</ul>
 			</nav>
@@ -13,10 +13,9 @@
 	</header>
 </template>
 <script>
+import { mapGetters } from 'vuex';
 import BaseIcon from './BaseIcon.vue';
 import LanguageSelect from './LanguageSelect.vue';
-import { mapGetters } from 'vuex'
-
 export default {
     props: ["transparent"],
 	 components: { BaseIcon, LanguageSelect },
