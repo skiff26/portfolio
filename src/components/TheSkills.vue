@@ -1,12 +1,12 @@
 <template>
 	<div class="aboutme__image">
 		<div class="aboutme__skills skills">
-			<ul class="skills__list">
+			<transition-group appear tag="ul" class="skills__list">
 				<li class="skills__item" v-for="skill in skills" :key="skill.id">
 					<BaseTooltip style="text-transform:uppercase;" :tooltip="skill.name">
 					<img :src="`./skills/${skill.name}.svg`" :alt="skill.name"></BaseTooltip>
 				</li>
-			</ul>
+			</transition-group>
 		</div>
 	</div>
 </template>
@@ -56,3 +56,21 @@ import BaseTooltip from './BaseTooltip.vue';
 		},
 	]
 </script>
+
+<style lang="scss" scoped>
+.skills__item {
+  transition: all 0.3s ease;
+}
+
+.skills__item.v-enter,
+.skills__item.v-leave-to {
+  opacity: 1;
+  transform: scale(0);
+}
+
+.skills__item.v-enter-active,
+.skills__item.v-leave-active {
+  opacity: 1;
+  transform: scale(0);
+}
+</style>

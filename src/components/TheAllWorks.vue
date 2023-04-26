@@ -8,7 +8,7 @@
 			</select>
 			<div class="works__content"> 
 				<ul class="works__cards">
-					<router-link :to="{ name: 'work', params: { id: work.id }, query: { title: work.title } } " v-for="work in works" :key="work">
+					<router-link :to="{ name: 'work', params: { id: work.id }, } " v-for="work in works" :key="work">
 					<li class="works__card card">
 							<h2 class="card__title" v-html="work.title"></h2>
 							<h3 class="card__star" v-show="work.star">BEST</h3>

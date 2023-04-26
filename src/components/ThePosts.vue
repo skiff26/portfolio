@@ -7,7 +7,7 @@
 					<a class="posts__btn-more" @click="showMore">{{ btnText }}</a>
 				</div>
 				<div class="posts__content">
-					<transition-group name="works-list">
+					<transition-group appear name="works-list">
 						<article class="posts__item post-block" v-for="post in postsLang" :key="post.id">
 							<h3 class="post-block__title" @click="openDialog(post)"><a @click.prevent href="#">{{ post.title }}</a></h3>
 							<div class="post-block__info">
@@ -58,10 +58,10 @@ export default {
 			this.btnMore = !this.btnMore
 			if(this.btnMore){
 				this.btnText = 'View less'
-				this.postsLang()
+				this.postsLang
 			} else {
 				this.btnText = 'View all'
-				this.postsLang()
+				this.postsLang
 			}
 		},
 		openDialog(post){
@@ -94,8 +94,8 @@ export default {
   transition: all 0.5s ease;
 }
 .works-list-enter-from,
-.works-list-leave-to {
+.works-list-leave-to {	
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(40px);
 }
 </style>

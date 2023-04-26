@@ -22,8 +22,8 @@ const store = useStore();
 
 const text = computed(() => {
 	return store.getters.eng
-		? 'As a web programmer, I am passionate about learning and developing my skills in web development. I have completed a number of free online courses and have created my own projects, which has allowed me to gain experience in the following areas:'
-		: 'Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел ряд бесплатных онлайн курсов и создавал собственные проекты, что позволило мне приобрести опыт в следующих областях:'
+		? 'As a web programmer, I am passionate about learning and developing my skills in web development. I have completed a number of online courses and have created my own projects, which has allowed me to gain experience in the following areas:'
+		: 'Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел ряд онлайн курсов и создавал собственные проекты, что позволило мне приобрести опыт в следующих областях:'
 })
 const contact = computed(() => {
 	return store.getters.eng 
