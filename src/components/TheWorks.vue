@@ -3,11 +3,15 @@
 		<div class="featured__container">
 			<h2 class="featured__featured">Featured works</h2>
 			<div class="featured__body">
-				<transition-group name="works-list">
-				<article class="featured__block block-featured" v-for="post in sortedPosts" :key="post.title">
-					<div class="block-featured_image"><router-link :to="{ name: 'work', params: { id: post.id } }"><img :src="`./posts/${post.path}/cover.png`" :alt="post.alt"></router-link></div>
+			 <transition-group name="list" appear>
+				<article class="featured__block block-featured" v-for="(post, index) in sortedPosts" :key="post.title" :style="{ transitionDelay: `${index * 0.09}s` }">
+					<div class="block-featured_image">
+						<router-link :to="{ name: 'work', params: { id: post.id } }"><img :src="`./posts/${post.path}/cover.png`" :alt="post.alt"></router-link>
+					</div>
 					<div class="block-featured__content">
-						<h3 class="block-featured__title"><router-link :to="{ name: 'work', params: { id: post.id } }" v-html="post.title"></router-link></h3>
+						<h3 class="block-featured__title">
+							<router-link :to="{ name: 'work', params: { id: post.id } }" v-html="post.title"></router-link>
+						</h3>
 						<div class="block-featured__info">
 							<time class="block-featured__years" @click="sortByYear">{{ post.year }}</time>
 							<strong class="block-featured__type" @click="sortByTheme">{{ post.theme }}</strong>
@@ -91,13 +95,13 @@ export default {
 }
 </script>
 <style scoped>
-.works-list-enter-active,
-.works-list-leave-active {
-  transition: all 0.5s ease;
+.list-enter-active,
+.list-leave-active {
+	transition: all .5s ease 0s;
 }
-.works-list-enter-from,
-.works-list-leave-to {
-  opacity: 0;
-  transform: translateY(30px);
+.list-enter-from,
+.list-leave-to {
+	opacity: 0;
+	transform: translateY(-30px);
 }
 </style>
