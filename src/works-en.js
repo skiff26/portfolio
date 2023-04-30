@@ -520,9 +520,9 @@ export default {
 				technology: 'Three.js',
 				}
 			],
-			title: 'This is a website about SpaceX company.',
+			title: 'This is a website about SpaceX company',
 			theme: 'HTML codding',
-			year: '2022',
+			year: '2023',
 			path: "spacex",
 			alt: 'SpaceX',
 			text: 'This is a website about rockets and space made with Three.js and canvas. It has a beautiful and modern design, interesting animations when hovering over large objects, and good responsiveness for any screen size. The styles are written using the BEM methodology.',
@@ -582,7 +582,7 @@ export default {
 				technology: 'VUE.JS',
 				}
 			],
-			title: 'Weather - Get weather information by city.',
+			title: 'Weather - Get weather information by city',
 			theme: 'Web programming',
 			year: '2023',
 			path: "weather",

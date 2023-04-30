@@ -3,7 +3,7 @@
 		<div class="header__container">
 			<nav class="header__nav nav">
 				<ul class="nav__items">
-					<LanguageSelect class="nav__lang" v-if="!transparent" :options="options" :selected="selected" @select="optionSelect"/>
+					<LanguageSelect class="nav__lang" v-if="!transparent" :options="options" :selected="selectedGet" @select="optionSelect"/>
 					<li class="nav__item" :class="{'transparent': transparent}" v-for="item in items" :key="item.label">
 						<router-link :to="item.link" class="nav__link">{{ item.label }}</router-link>
 					</li>
@@ -41,7 +41,7 @@ export default {
                     rout: true
                 }
             ],
-				selected: 'Выбрать язык',
+				selected: 'Язык',
 				options: [
 					{name: 'English', value: 1},
 					{name: 'Русский', value: 2},
@@ -54,9 +54,13 @@ export default {
 				this.city = option.name
 			},	
     },
+	 computed: {
+		selectedGet(){
+			return this.$store.getters.eng ? "English" : "Русский"
+		}
+	 },
 	 mounted(){
 		this.$store.dispatch('setSaveLanguage')
-		this.selected = this.$store.getters.eng ? "English" : "Русский"
 	 }
 }
 </script>

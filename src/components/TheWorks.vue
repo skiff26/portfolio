@@ -36,36 +36,37 @@ export default {
 		return {
 			isShownMore: false,
 			sorted: false,
+			featurs: [0,1,2,6,7,8,9,11],
 			posts: [],
 			otherPosts: [],
-			totalWorks: [...works.posts, ...works.otherPosts].length
 		}
 	},
 	methods: {
 		addPosts(){
 			this.isShownMore = !this.isShownMore
 			this.posts = [...this.posts, ...this.otherPosts]
+			this.sorted = false
 		},
 		hidePosts(){
-			if (this.sorted) {
-				this.sortByYear()
-			}
 			this.isShownMore = !this.isShownMore
-			this.posts.splice(this.posts.length - this.otherPosts.length, this.otherPosts.length)
+			const store = this.$store.getters.eng;
+			this.posts = store ? worksEn.posts : works.posts;
+			this.posts.length = 3
+			this.sorted = false
 		},
 		sortByYear() {
+			if (!this.isShownMore) { this.addPosts() }
 			this.sorted = !this.sorted
     		if(this.sorted){
-				if (!this.isShownMore) { this.addPosts() }
-				 this.posts.sort((a, b) => b.year - a.year);
+				this.posts.sort((a, b) => b.year - a.year);
 			} else {
 				this.posts.sort((a, b) => a.year - b.year);
 			}
    	},
 		sortByTheme(){
+			if (!this.isShownMore) { this.addPosts() }
 			this.sorted = !this.sorted
     		if(this.sorted){
-				if (!this.isShownMore) { this.addPosts() }
 				this.posts.sort((a, b) => b.theme.localeCompare(a.theme));
 			} else {
 				this.posts.sort((a, b) => a.theme.localeCompare(b.theme));
@@ -86,10 +87,11 @@ export default {
 		}
 	},
 	computed: {
+		...mapGetters(['eng']),
 		sortedPosts(){
+			this.posts = this.posts.filter(post => this.featurs.includes(post.id))
 			return [...this.posts];
-		},
-		...mapGetters(['eng'])
+		}
 	},
 	mounted(){
 		this.setLanguage()
