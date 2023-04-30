@@ -290,6 +290,14 @@ export default {
 				},
 				{ 
 				bgColor: '',
+				technology: 'Vuex',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Axios',
+				},
+				{ 
+				bgColor: '',
 				technology: 'Google Analytics',
 				}
 			],
@@ -301,7 +309,7 @@ export default {
 			alt: 'Portfolio',
 			text: 'This website is a portfolio consisting of three main pages and one dynamic page that contains a description of each work. It features a custom tooltip, email form validation, and a slider for the works gallery.',
 			fullText: 'The main page is divided into three blocks - "About Me," "Posts," and "Works," which can be expanded or collapsed as needed. The "Works" section also includes filtering options by year and type of work. On the dynamic page, the background color and shadows of the used technologies are randomly selected.',
-			info: 'The project uses Hashrouter. Google Analytics is connected.',
+			info: 'The project uses Hashrouter. Google Analytics is connected. When you first enter the website, the language is set based on your location.',
 		},
 		{
 			id: 7,

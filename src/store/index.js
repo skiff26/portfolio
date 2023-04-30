@@ -1,4 +1,5 @@
 import { createStore } from 'vuex';
+import axios from 'axios';
 
 export default createStore ({
 	state: {
@@ -32,6 +33,16 @@ export default createStore ({
 			if (isEnlgish !== null){
 				commit('setLang', isEnlgish)
 			}
+		},
+		getIP({ commit }){
+			axios.get(`https://ipapi.co/json/`)
+				.then ((res) => {
+					const english = res.data.country === 'RU' ? false : res.data.country === 'BY' ? false : true
+					if (localStorage.getItem('eng') == null){
+						commit('setLang', english)
+					}
+				})
+				.catch(error => console.log(error));
 		}
 	}
 })

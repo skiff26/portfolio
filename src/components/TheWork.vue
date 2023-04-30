@@ -76,7 +76,6 @@ export default {
 			const posts_EN = [...postsEn, ...otherPostsEn]
 			const posts_RU = [...postsRu, ...otherPostsRu]	
 
-
 			const postById = computed(() => {
 				return LANGUAGE ? posts_EN[postId] : posts_RU[postId] 
 			})
@@ -85,14 +84,6 @@ export default {
 			const photos = [...post.photos]
 			const technologies = [...post.technologies]
 			const bgColors = ['FFFF0099', 'FF990099', 'FFC0CB99', 'FFE4C499', 'FFF8DC99', 'DAA52099', 'FFA50099', 'FF450099', 'FF8C0099', 'FF634799', '8B000099', 'A0522D99', '2F4F4F99', '70809099', '0000FF99', '00FF7F99', '32CD3299', 'FF149399', 'FF69B499', 'FF00FF99', 'FF149399', 'FF6EB499', 'FF8C0099'];
-			
-			const infoText = computed(() => {
-				return store.getters.eng ? 'Project information' : 'Информация о проекте'
-			})
-
-			const technologyText = computed(() => {
-				return store.getters.eng ? 'Technologies' : 'Технологии'
-			})
 
 			const state = reactive({
 				bgColor: '',
@@ -100,9 +91,17 @@ export default {
 
 			function generateColors() {
 				technologies.forEach(item => {
-				item.bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
+					item.bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 				});
 			}
+
+			const infoText = computed(() => {
+				return store.getters.eng ? 'Project information' : 'Информация о проекте'
+			})
+
+			const technologyText = computed(() => {
+				return store.getters.eng ? 'Technologies' : 'Технологии'
+			})
 
 			generateColors()
 
