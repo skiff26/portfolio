@@ -36,7 +36,6 @@ export default {
 		return {
 			isShownMore: false,
 			sorted: false,
-			sortedByTheme: false,
 			posts: [],
 			otherPosts: [],
 			totalWorks: [...works.posts, ...works.otherPosts].length
@@ -48,6 +47,9 @@ export default {
 			this.posts = [...this.posts, ...this.otherPosts]
 		},
 		hidePosts(){
+			if (this.sorted) {
+				this.sortByYear()
+			}
 			this.isShownMore = !this.isShownMore
 			this.posts.splice(this.posts.length - this.otherPosts.length, this.otherPosts.length)
 		},

@@ -522,7 +522,7 @@ export default {
 			],
 			title: 'This is a website about SpaceX company.',
 			theme: 'HTML codding',
-			year: '2023',
+			year: '2022',
 			path: "spacex",
 			alt: 'SpaceX',
 			text: 'This is a website about rockets and space made with Three.js and canvas. It has a beautiful and modern design, interesting animations when hovering over large objects, and good responsiveness for any screen size. The styles are written using the BEM methodology.',
