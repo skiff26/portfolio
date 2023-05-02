@@ -1,6 +1,6 @@
 <template>
 	<article class="settings">
-		<BaseOverlayDialog @click="$store.commit('toggleSettings')" />
+		<BaseOverlay :white="white" @click="$store.commit('toggleSettings')" />
 		<div class="settings__cont">
 			<button class="settings__exit" @click="$store.commit('toggleSettings')"><BaseIcon name="exit" wh="30" color="white"/></button>
 			<h3 class="settings__title">{{ text }}</h3>
@@ -13,10 +13,11 @@
 </template>
 
 <script setup>
-import BaseIcon from './BaseIcon.vue';
-import BaseOverlayDialog from './BaseOverlayDialog.vue';
-import { useStore } from 'vuex'
 import { computed } from 'vue'
+import { useStore } from 'vuex'
+import BaseIcon from './BaseIcon.vue'
+import BaseOverlay from './BaseOverlay.vue'
+const white = true
 const store = useStore()
 const text = computed(() => {
 	return store.getters.eng 

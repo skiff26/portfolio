@@ -3,10 +3,10 @@
 		<div class="aboutme__container">
 			<div class="aboutme__body">
 				<div class="aboutme__content">
-					<h1 class="aboutme__title">Hi, I am Artem, Web Programmer</h1>
-					<p class="aboutme__text">{{ text }}</p>
+					<h1 class="aboutme__title animate__animated animate__fadeInDown">Hi, I am Artem, Web Programmer</h1>
+					<p class="aboutme__text animate__animated animate__fadeInLeft">{{ text }}</p>
 					<!-- <a href="https://github.com/skiff26/portfolio/raw/gh-pages/Artem%20Kulchytskyi%20frontend%20ru.pdf" download class="aboutme__btn">Download Resume</a> -->
-					<a href="mailto:artem.kulchitsky@gmail.com" class="aboutme__btn">{{ contact }}</a>
+					<a href="mailto:artem.kulchitsky@gmail.com" class="aboutme__btn animate__animated animate__headShake">{{ contact }}</a>
 				</div>
 				<TheSkills />
 			</div>

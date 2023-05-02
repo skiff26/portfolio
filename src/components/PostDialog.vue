@@ -1,6 +1,6 @@
 <template>
 	<article class="post">
-		<BaseOverlayDialog @click="$emit('close')" />
+		<BaseOverlay :white="white" @click="$emit('close')" />
 		<div class="post__container">
 			<button class="post__exit" @click="$emit('close')"><BaseIcon name="exit" color="white"/></button>
 			<h3 class="post__title" v-html="post.title"></h3>
@@ -12,10 +12,15 @@
 </template>
 <script>
 import BaseIcon from './BaseIcon.vue'
-import BaseOverlayDialog from './BaseOverlayDialog.vue'
+import BaseOverlay from './BaseOverlay.vue'
 
 export default {
-	components: { BaseIcon, BaseOverlayDialog },
+	components: { BaseIcon, BaseOverlay },
 	props: ['post'],
+	data(){
+		return {
+			white: true
+		}
+	}
 }
 </script>

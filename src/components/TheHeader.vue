@@ -1,5 +1,5 @@
 <template>
-	<header class="header" :class="{'transparent': transparent}">
+	<header class="header animate__animated animate__fadeIn" :class="{'transparent': transparent}">
 		<div class="header__container">
 			<nav class="header__nav nav">
 				<ul class="nav__items">

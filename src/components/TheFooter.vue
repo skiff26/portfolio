@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer wow animate__animated animate__fadeIn" :class="{'transparent': transparent}">
+	<footer class="footer" :class="{'transparent': transparent}">
 		<div class="footer__container">
 			<nav class="footer__media media ">
 				<ul class="media__list">
