@@ -48,12 +48,12 @@
 	</div>
 </template>
 <script>
-import worksEn from '../works-en'
 import works from '../works'
+import worksEn from '../works-en'
 import BaseIcon from '../components/BaseIcon.vue'
 import { useStore } from 'vuex'
-import { reactive, computed } from 'vue'
 import { useRoute } from 'vue-router';
+import { reactive, computed } from 'vue'
 import { Pagination, EffectCards } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import "swiper/css"
@@ -65,8 +65,7 @@ export default {
 		BaseIcon, Swiper, SwiperSlide
 	},
 	setup(){
-			const store = useStore()	
-
+			const store = useStore()
 			let postsRu =  works.posts 
 			let otherPostsRu = works.otherPosts
 			let postsEn =  worksEn.posts 

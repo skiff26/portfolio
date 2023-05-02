@@ -3,7 +3,7 @@
 		<TheHeader v-if="!state.isSmall" :transparent="transparent"/>
 		<TheHeaderMobile v-else :transparent="transparent"/>
 		<main class="page">
-			<TheWork />
+			<TheWork/>
 		</main>
 		<TheFooter :transparent="transparent"/>
 	</div>
