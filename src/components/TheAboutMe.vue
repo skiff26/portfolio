@@ -22,8 +22,8 @@ const store = useStore();
 
 const text = computed(() => {
 	return store.getters.eng
-		? 'As a web programmer, I am passionate about learning and developing my skills in web development. I have completed a number of online courses and have created my own projects, which has allowed me to gain experience in the following areas:'
-		: 'Как веб-программист, я увлечен изучением и развитием своих навыков в веб-разработке. Я прошел ряд онлайн курсов и создавал собственные проекты, что позволило мне приобрести опыт в следующих областях:'
+		? 'I am a frontend developer with experience in developing web applications, web games, and websites. I am constantly improving my knowledge in this field and learning new technologies. Currently, I know and use the following stack 👉'
+		: 'Я фронтенд разработчик с опытом разработки web-приложений, web-игр и сайтов. Я постоянно совершенствую свои знания в данной области, а так же изучаю новые технологии. На данный момент я знаю и использую такой стек 👉'
 })
 const contact = computed(() => {
 	return store.getters.eng 

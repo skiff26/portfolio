@@ -235,7 +235,7 @@
 		font-size: 20px;
 		line-height: 29px;
 		color: #FFFFFF;
-		background: #FF6464;
+		background: #fd5252;
 		border-radius: 2px;
 		padding: 10px 20px;
 		margin-bottom: 70px;
@@ -246,9 +246,6 @@
 		}
 		@media (max-width: 1120px){
 			margin-bottom: 15px;
-		}
-		@media (max-width: 425px){
-			// margin-bottom: 60px;
 		}
 	}
 
@@ -341,7 +338,7 @@
 	}
 }
 .post-block {
-	background: #FFFFFF;
+	background: #ffffff;
 	box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
 	border-radius: 4px;
 	max-width: 420px;
