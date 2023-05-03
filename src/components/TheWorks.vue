@@ -49,8 +49,8 @@ export default {
 		},
 		hidePosts(){
 			this.isShownMore = !this.isShownMore
-			const store = this.$store.getters.eng;
-			this.posts = store ? worksEn.posts : works.posts;
+			const store = this.$store.getters.eng
+			this.posts = store ? worksEn.posts : works.posts
 			this.posts.length = 3
 			this.sorted = false
 		},
@@ -58,27 +58,27 @@ export default {
 			if (!this.isShownMore) { this.addPosts() }
 			this.sorted = !this.sorted
     		if(this.sorted){
-				this.posts.sort((a, b) => b.year - a.year);
+				this.posts.sort((a, b) => a.year - b.year)
 			} else {
-				this.posts.sort((a, b) => a.year - b.year);
+				this.posts.sort((a, b) => b.year - a.year)
 			}
    	},
 		sortByTheme(){
 			if (!this.isShownMore) { this.addPosts() }
 			this.sorted = !this.sorted
     		if(this.sorted){
-				this.posts.sort((a, b) => b.theme.localeCompare(a.theme));
-			} else {
-				this.posts.sort((a, b) => a.theme.localeCompare(b.theme));
+				 this.posts.sort((a, b) => a.theme.localeCompare(b.theme))
+				} else {
+				this.posts.sort((a, b) => b.theme.localeCompare(a.theme))
 			}
 		},
 		setLanguage(){
-			this.sorted = false;
-			this.isShownMore = false;
-			this.$store.dispatch('setSaveLanguage');
-			const store = this.$store.getters.eng;
-			this.posts = store ? worksEn.posts : works.posts;
-			this.otherPosts = store ? worksEn.otherPosts : works.otherPosts;
+			this.sorted = false
+			this.isShownMore = false
+			this.$store.dispatch('setSaveLanguage')
+			const store = this.$store.getters.eng
+			this.posts = store ? worksEn.posts : works.posts
+			this.otherPosts = store ? worksEn.otherPosts : works.otherPosts
 		}
 	},
 	watch: {

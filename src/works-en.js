@@ -2,132 +2,144 @@ export default {
 	posts: [
 		{
 			id: 0,
-			photos: ['00','01','02','03','04','05','06'],
-			link: 'https://skiff26.github.io/healthyfood/',
-			ghLink: 'https://github.com/skiff26/healthyfood',
+			photos: ['00','01','02','03','04','05','06','07'],
+			link: 'https://skiff26.github.io/portfolio/#/',
+			ghLink: 'https://github.com/skiff26/portfolio',
 			technologies: [
 				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'VUE.JS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Vuex',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Axios',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Google Analytics',
+				}
 			],
-			title: 'Healthyfood - Website for a Healthy Food Store',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "healthyfood",
-			alt: 'Healthyfood',
-			text: 'This website is an online store that offers various products. It has a stylish design with beautiful animations and a slider featuring photos. The website is divided into several sections, including the main screen, a slider with images, instructions',
-			fullText: 'product sections, information about chefs, recipes, and the company`s social media pages.'
+			star: true,
+			title: 'Portfolio website',
+			theme: 'Web programming',
+			year: '2023',
+			path: "portfolio",
+			alt: 'Portfolio',
+			text: 'This website is a portfolio consisting of three main pages and one dynamic page that contains a description of each work. It features a custom tooltip, email form validation, and a slider for the works gallery.',
+			fullText: 'The main page is divided into three blocks - "About Me," "Posts," and "Works," which can be expanded or collapsed as needed. The "Works" section also includes filtering options by year and type of work. On the dynamic page, the background color and shadows of the used technologies are randomly selected.',
+			info: 'The project uses Hashrouter. Google Analytics is connected. When you first enter the website, the language is set based on your location.',
 		},
 		{
 			id: 1,
-			photos: ['00','01','02','03','04','05'],
-			link: 'https://skiff26.github.io/noiceland/',
-			ghLink: 'https://github.com/skiff26/noiceland',
+			photos: ['00','01','02','03','04'],
+			link: 'https://skiff26.github.io/minesweeper/',
+			ghLink: 'https://github.com/skiff26/minesweeper',
 			technologies: [
 				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'VUE.JS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Google Analytics',
+				}
 			],
-			title: 'Noiceland - Website about News and Important Events',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "noiceland",
-			alt: 'Noiceland',
-			text: 'This website is designed for publishing articles in a minimalist style, without any unnecessary details that might distract from the content. The focus is on the articles themselves, allowing readers to fully concentrate on the written material.',
-			fullText: '<br>At the top of the page, the most important or popular topic is highlighted for easy access.'
+			star: true,
+			title: 'Game Minesweeper',
+			theme: 'Web programming',
+			year: '2023',
+			path: "minesweeper",
+			alt: 'Minesweeper',
+			text: 'This is a web game called Minesweeper, created to develop logical skills. The goal of the game is to clear the field of mines without detonating any of them, as they are randomly placed throughout the field. The game features sound effects, which',
+			fullText: 'are played when a mine is detonated or a field is cleared.<br>After completing the game, a corresponding dialog box appears, informing the player of their victory or defeat. The player wins if all fields are successfully cleared.<br>The game also includes a settings menu that allows players to turn off the sound effects, reveal all mines, and change the background color theme.<br>In addition, the game has a "Share" button for social media, configured using <em>meta</em> tags.',
+			info: 'The application is connected to Google Analytics.<br>Settings are saved after the page is refreshed.',
 		},
 		{
 			id: 2,
-			photos: ['00','01','02','03','04','05','06','07'],
-			ghLink: 'https://github.com/skiff26/freebieagency',
-			link: 'https://skiff26.github.io/freebieagency/',
+			photos: ['00','01','02'],
+			link: 'https://skiff26.github.io/chess/',
+			ghLink: 'https://github.com/skiff26/chess',
 			technologies: [
 				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'VUE.JS',
+				}
 			],
-			title: 'Freebie Agency - Website for a creative agency',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "freebieagency",
-			alt: 'Freebieagency',
-			text: 'This is a website for a creative studio that helps startups grow their business. The site features unconventional design solutions and animations.',
-			fullText: '<br>There are tabs with photo filters that allow users to easily and quickly find the information they need.'
+			title: 'Chess <b>[BETA]</b>',
+			theme: 'Web programming',
+			year: '2023',
+			path: "chess",
+			alt: 'Chess',
+			text: 'WEB game. There are settings available: changing the theme from dark to light and vice versa, turning on the animation of unfolding the board. Functionality of moves, check and capture of figures is implemented. The project is under development.',
+			info: 'Version: 1.2 <br> <b>Fixed: </b> <br> The chess system for the king has been reworked, and now it`s prohibited to capture a piece that is protected by the king.<br><b>Not implemented: </b><br> Castling, declaring checkmate, surrendering.',
 		},
 	],
 	otherPosts: [
@@ -256,144 +268,132 @@ export default {
 		},
 		{
 			id: 6,
-			photos: ['00','01','02','03','04','05','06','07'],
-			link: 'https://skiff26.github.io/portfolio/#/',
-			ghLink: 'https://github.com/skiff26/portfolio',
+			photos: ['00','01','02','03','04','05','06'],
+			link: 'https://skiff26.github.io/healthyfood/',
+			ghLink: 'https://github.com/skiff26/healthyfood',
 			technologies: [
 				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'VUE.JS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Vuex',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Axios',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Google Analytics',
-				}
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
 			],
-			star: true,
-			title: 'Portfolio website',
-			theme: 'Web programming',
-			year: '2023',
-			path: "portfolio",
-			alt: 'Portfolio',
-			text: 'This website is a portfolio consisting of three main pages and one dynamic page that contains a description of each work. It features a custom tooltip, email form validation, and a slider for the works gallery.',
-			fullText: 'The main page is divided into three blocks - "About Me," "Posts," and "Works," which can be expanded or collapsed as needed. The "Works" section also includes filtering options by year and type of work. On the dynamic page, the background color and shadows of the used technologies are randomly selected.',
-			info: 'The project uses Hashrouter. Google Analytics is connected. When you first enter the website, the language is set based on your location.',
+			title: 'Healthyfood - Website for a Healthy Food Store',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "healthyfood",
+			alt: 'Healthyfood',
+			text: 'This website is an online store that offers various products. It has a stylish design with beautiful animations and a slider featuring photos. The website is divided into several sections, including the main screen, a slider with images, instructions',
+			fullText: 'product sections, information about chefs, recipes, and the company`s social media pages.'
 		},
 		{
 			id: 7,
-			photos: ['00','01','02','03','04'],
-			link: 'https://skiff26.github.io/minesweeper/',
-			ghLink: 'https://github.com/skiff26/minesweeper',
+			photos: ['00','01','02','03','04','05'],
+			link: 'https://skiff26.github.io/noiceland/',
+			ghLink: 'https://github.com/skiff26/noiceland',
 			technologies: [
 				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'VUE.JS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Google Analytics',
-				}
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
 			],
-			star: true,
-			title: 'Game Minesweeper',
-			theme: 'Web programming',
-			year: '2023',
-			path: "minesweeper",
-			alt: 'Minesweeper',
-			text: 'This is a web game called Minesweeper, created to develop logical skills. The goal of the game is to clear the field of mines without detonating any of them, as they are randomly placed throughout the field. The game features sound effects, which',
-			fullText: 'are played when a mine is detonated or a field is cleared.<br>After completing the game, a corresponding dialog box appears, informing the player of their victory or defeat. The player wins if all fields are successfully cleared.<br>The game also includes a settings menu that allows players to turn off the sound effects, reveal all mines, and change the background color theme.<br>In addition, the game has a "Share" button for social media, configured using <em>meta</em> tags.',
-			info: 'The application is connected to Google Analytics.<br>Settings are saved after the page is refreshed.',
+			title: 'Noiceland - Website about News and Important Events',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "noiceland",
+			alt: 'Noiceland',
+			text: 'This website is designed for publishing articles in a minimalist style, without any unnecessary details that might distract from the content. The focus is on the articles themselves, allowing readers to fully concentrate on the written material.',
+			fullText: '<br>At the top of the page, the most important or popular topic is highlighted for easy access.'
 		},
 		{
 			id: 8,
-			photos: ['00','01','02'],
-			link: 'https://skiff26.github.io/chess/',
-			ghLink: 'https://github.com/skiff26/chess',
+			photos: ['00','01','02','03','04','05','06','07'],
+			ghLink: 'https://github.com/skiff26/freebieagency',
+			link: 'https://skiff26.github.io/freebieagency/',
 			technologies: [
 				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'VUE.JS',
-				}
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
 			],
-			title: 'Chess <b>[BETA]</b>',
-			theme: 'Web programming',
-			year: '2023',
-			path: "chess",
-			alt: 'Chess',
-			text: 'WEB game. There are settings available: changing the theme from dark to light and vice versa, turning on the animation of unfolding the board. Functionality of moves, check and capture of figures is implemented. The project is under development.',
-			info: 'Version: 1.2 <br> <b>Fixed: </b> <br> The chess system for the king has been reworked, and now it`s prohibited to capture a piece that is protected by the king.<br><b>Not implemented: </b><br> Castling, declaring checkmate, surrendering.',
+			title: 'Freebie Agency - Website for a creative agency',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "freebieagency",
+			alt: 'Freebieagency',
+			text: 'This is a website for a creative studio that helps startups grow their business. The site features unconventional design solutions and animations.',
+			fullText: '<br>There are tabs with photo filters that allow users to easily and quickly find the information they need.'
 		},
 		{
 			id: 9,

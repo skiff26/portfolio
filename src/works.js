@@ -2,132 +2,144 @@ export default {
 	posts: [
 		{
 			id: 0,
-			photos: ['00','01','02','03','04','05','06'],
-			link: 'https://skiff26.github.io/healthyfood/',
-			ghLink: 'https://github.com/skiff26/healthyfood',
+			photos: ['00','01','02','03','04','05','06','07'],
+			link: 'https://skiff26.github.io/portfolio/#/',
+			ghLink: 'https://github.com/skiff26/portfolio',
 			technologies: [
 				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'VUE.JS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Vuex',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Axios',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Google Analytics',
+				}
 			],
-			title: 'Healthyfood - Сайт для магазина здоровой еды',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "healthyfood",
-			alt: 'Healthyfood',
-			text: 'Этот вебсайт представляет собой онлайн-магазин, предоставляющий товары. Сайт имеет стильный дизайн с красивыми анимациями и слайдером с фотографиями.',
-			fullText: '<br>Он разбит на несколько блоков: главный экран, слайдер с картинками, инструкцию, разделы товаров, информацию о шефах, рецепты и социальные сети компании.'
+			star: true,
+			title: 'Сайт - портфолио',
+			theme: 'Web programming',
+			year: '2023',
+			path: "portfolio",
+			alt: 'Portfolio',
+			text: 'Этот сайт является портфолио, состоящим из трех основных страниц и одной динамической, которая содержит описание каждой работы. В нем реализован авторский tooltip, валидация формы email, а также слайдер для галереи работ.',
+			fullText: 'Основная страница разделена на три блока - "Обо мне", "Посты" и "Работы", которые можно открыть или скрыть по необходимости. В разделе "Работы" также предусмотрена возможность фильтрации по году и типу работы. На динамической странице цвет фона и теней используемых технологий выбираются случайным образом.',
+			info: 'В проекте используется Hashrouter. Подключена Google анатлитика. При первом входе на сайт язык устанавливается на основе Вашего местонахождения.',
 		},
 		{
 			id: 1,
-			photos: ['00','01','02','03','04','05'],
-			link: 'https://skiff26.github.io/noiceland/',
-			ghLink: 'https://github.com/skiff26/noiceland',
+			photos: ['00','01','02','03','04'],
+			link: 'https://skiff26.github.io/minesweeper/',
+			ghLink: 'https://github.com/skiff26/minesweeper',
 			technologies: [
 				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'VUE.JS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Google Analytics',
+				}
 			],
-			title: 'Noiceland - Сайт о новостях и важных событиях',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "noiceland",
-			alt: 'Noiceland',
-			text: 'Это вебсайт, предназначенный для публикации статей. Он выполнен в минималистическом стиле без лишних деталей, что позволяет сконцентрироваться на содержании статей.',
-			fullText: '<br>На вершине страницы расположена наиболее важная или популярная тема.'
+			star: true,
+			title: 'Game Minesweeper',
+			theme: 'Web programming',
+			year: '2023',
+			path: "minesweeper",
+			alt: 'Minesweeper',
+			text: 'Это веб-игра Minesweeper (Сапёр), созданная для развития логических навыков. Цель игры - разминировать поле, не подорвавшись на рандомно расставленных минах. В игре есть звуковое сопровождение, которое',
+			fullText: 'воспроизводится при разминировании поля и взрыве мины.<br>После завершения игры появляется соответствующее диалоговое окно, сообщающее о победе или поражении. Игрок выигрывает, если все поля успешно разминированы.<br>В игре также присутствует меню с настройками, позволяющее выключить звуковое сопровождение, показать все мины и изменить цветовую тему фона.<br>Кроме того, в игре есть кнопка "Поделиться" в социальных сетях, настроенная с помощью <em>meta</em>-тегов.',
+			info: 'К приложению подключенна Google аналитика.<br>Настройки сохраняются после обновления страницы.',
 		},
 		{
 			id: 2,
-			photos: ['00','01','02','03','04','05','06','07'],
-			ghLink: 'https://github.com/skiff26/freebieagency',
-			link: 'https://skiff26.github.io/freebieagency/',
+			photos: ['00','01','02'],
+			link: 'https://skiff26.github.io/chess/',
+			ghLink: 'https://github.com/skiff26/chess',
 			technologies: [
 				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'VUE.JS',
+				}
 			],
-			title: 'Freebie Agency - Сайт для креативной студии',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "freebieagency",
-			alt: 'Freebieagency',
-			text: 'Это вебсайт творческой студии, которая помогает стартапам развивать свой бизнес. На сайте используются нестандартные решения в дизайне и анимациях.',
-			fullText: '<br>Присутствуют табы с фильтрацией фотографий, которые позволяют легко и быстро находить нужную информацию.'
+			title: 'Chess - Шахматы <b>[BETA]</b>',
+			theme: 'Web programming',
+			year: '2023',
+			path: "chess",
+			alt: 'Chess',
+			text: 'WEB игра шахматы. Есть возможность настроек: изменение темы с темной на светлую и наоборот, включение анимации разворачивания доски. Реализован функционал ходов, шахов и бития фигур. Проект в разработке. V1.2',
+			info: 'Version: 1.2 <br> <b>Исправлено: </b> <br> переработана система шахов королю, добавлен запрет бить фигуру королем, которая находится под защитой.<br><b>Не реализовано: </b><br>рокировка, объявление мата, возможность сдаться.',
 		},
 	],
 	otherPosts: [
@@ -256,144 +268,132 @@ export default {
 		},
 		{
 			id: 6,
-			photos: ['00','01','02','03','04','05','06','07'],
-			link: 'https://skiff26.github.io/portfolio/#/',
-			ghLink: 'https://github.com/skiff26/portfolio',
+			photos: ['00','01','02','03','04','05','06'],
+			link: 'https://skiff26.github.io/healthyfood/',
+			ghLink: 'https://github.com/skiff26/healthyfood',
 			technologies: [
 				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'VUE.JS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Vuex',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Axios',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Google Analytics',
-				}
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
 			],
-			star: true,
-			title: 'Сайт - портфолио',
-			theme: 'Web programming',
-			year: '2023',
-			path: "portfolio",
-			alt: 'Portfolio',
-			text: 'Этот сайт является портфолио, состоящим из трех основных страниц и одной динамической, которая содержит описание каждой работы. В нем реализован авторский tooltip, валидация формы email, а также слайдер для галереи работ.',
-			fullText: 'Основная страница разделена на три блока - "Обо мне", "Посты" и "Работы", которые можно открыть или скрыть по необходимости. В разделе "Работы" также предусмотрена возможность фильтрации по году и типу работы. На динамической странице цвет фона и теней используемых технологий выбираются случайным образом.',
-			info: 'В проекте используется Hashrouter. Подключена Google анатлитика. При первом входе на сайт язык устанавливается на основе Вашего местонахождения.',
+			title: 'Healthyfood - Сайт для магазина здоровой еды',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "healthyfood",
+			alt: 'Healthyfood',
+			text: 'Этот вебсайт представляет собой онлайн-магазин, предоставляющий товары. Сайт имеет стильный дизайн с красивыми анимациями и слайдером с фотографиями.',
+			fullText: '<br>Он разбит на несколько блоков: главный экран, слайдер с картинками, инструкцию, разделы товаров, информацию о шефах, рецепты и социальные сети компании.'
 		},
 		{
 			id: 7,
-			photos: ['00','01','02','03','04'],
-			link: 'https://skiff26.github.io/minesweeper/',
-			ghLink: 'https://github.com/skiff26/minesweeper',
+			photos: ['00','01','02','03','04','05'],
+			link: 'https://skiff26.github.io/noiceland/',
+			ghLink: 'https://github.com/skiff26/noiceland',
 			technologies: [
 				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'VUE.JS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Google Analytics',
-				}
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
 			],
-			star: true,
-			title: 'Game Minesweeper',
-			theme: 'Web programming',
-			year: '2023',
-			path: "minesweeper",
-			alt: 'Minesweeper',
-			text: 'Это веб-игра Minesweeper (Сапёр), созданная для развития логических навыков. Цель игры - разминировать поле, не подорвавшись на рандомно расставленных минах. В игре есть звуковое сопровождение, которое',
-			fullText: 'воспроизводится при разминировании поля и взрыве мины.<br>После завершения игры появляется соответствующее диалоговое окно, сообщающее о победе или поражении. Игрок выигрывает, если все поля успешно разминированы.<br>В игре также присутствует меню с настройками, позволяющее выключить звуковое сопровождение, показать все мины и изменить цветовую тему фона.<br>Кроме того, в игре есть кнопка "Поделиться" в социальных сетях, настроенная с помощью <em>meta</em>-тегов.',
-			info: 'К приложению подключенна Google аналитика.<br>Настройки сохраняются после обновления страницы.',
+			title: 'Noiceland - Сайт о новостях и важных событиях',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "noiceland",
+			alt: 'Noiceland',
+			text: 'Это вебсайт, предназначенный для публикации статей. Он выполнен в минималистическом стиле без лишних деталей, что позволяет сконцентрироваться на содержании статей.',
+			fullText: '<br>На вершине страницы расположена наиболее важная или популярная тема.'
 		},
 		{
 			id: 8,
-			photos: ['00','01','02'],
-			link: 'https://skiff26.github.io/chess/',
-			ghLink: 'https://github.com/skiff26/chess',
+			photos: ['00','01','02','03','04','05','06','07'],
+			ghLink: 'https://github.com/skiff26/freebieagency',
+			link: 'https://skiff26.github.io/freebieagency/',
 			technologies: [
 				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'VUE.JS',
-				}
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
 			],
-			title: 'Chess - Шахматы <b>[BETA]</b>',
-			theme: 'Web programming',
-			year: '2023',
-			path: "chess",
-			alt: 'Chess',
-			text: 'WEB игра шахматы. Есть возможность настроек: изменение темы с темной на светлую и наоборот, включение анимации разворачивания доски. Реализован функционал ходов, шахов и бития фигур. Проект в разработке. V1.2',
-			info: 'Version: 1.2 <br> <b>Исправлено: </b> <br> переработана система шахов королю, добавлен запрет бить фигуру королем, которая находится под защитой.<br><b>Не реализовано: </b><br>рокировка, объявление мата, возможность сдаться.',
+			title: 'Freebie Agency - Сайт для креативной студии',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "freebieagency",
+			alt: 'Freebieagency',
+			text: 'Это вебсайт творческой студии, которая помогает стартапам развивать свой бизнес. На сайте используются нестандартные решения в дизайне и анимациях.',
+			fullText: '<br>Присутствуют табы с фильтрацией фотографий, которые позволяют легко и быстро находить нужную информацию.'
 		},
 		{
 			id: 9,
