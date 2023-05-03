@@ -70,12 +70,15 @@ export default {
     components: { BaseIcon }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .v-select {
 	width: 120px;
 	margin: 10px auto;
 	cursor: pointer;
 	user-select: none;
+	@media (min-width: 1921px){
+		max-width: 200px;
+	}
 }
 .title{
 	border: 1px solid #aeaeae;
@@ -84,6 +87,9 @@ export default {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	@media (min-width: 1921px){
+		font-size: calc(16px + 2 * (100vw / 1920));
+	}
 }
 .v-select li{
 	transition: all 0.1s ease 0s;
@@ -91,6 +97,9 @@ export default {
 	list-style: none;
 	color: white;
 	text-align: center;	
+	@media (min-width: 1921px){
+		font-size: calc(16px + 2 * (100vw / 1920));
+	}
 }
 .v-select li:hover{
 	background: #e7e7e7e3;
@@ -102,7 +111,6 @@ export default {
 	top: 35px;
 	width: 100%;
 	background-color: rgba(31, 28, 28, 0.979);
-	/* border-radius: 5px; */
 }
 .enter-active {
 	transition: all 0.3s ease 0s;

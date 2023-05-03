@@ -145,258 +145,6 @@ export default {
 	otherPosts: [
 		{
 			id: 3,
-			photos: ['00','01','02','03','04','05','06'],
-			technologies: [
-				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Animations',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				}
-			],
-			ghLink: 'https://github.com/skiff26/ytyt',
-			link: 'https://skiff26.github.io/ytyt/',
-			title: 'YtYt - Сайт для школы программирования',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "ytyt",
-			alt: 'YtYt',
-			text: 'Это вебсайт школы программирования с красивым и приятным дизайном, содержащий небольшие анимации. Сайт разбит на конкретные блоки, которые интуитивно понятны и соблазняют на приобретение курсов.',
-			fullText: '<br>Он предлагает информацию об услугах и программах обучения.'
-		},
-		{
-			id: 4,
-			photos: ['00','01','02','03','04','05','06','07','08','09'],
-			link: 'https://skiff26.github.io/Cocteil/',
-			ghLink: 'https://github.com/skiff26/Cocteil',
-			technologies: [
-				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Animations',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				}
-			],
-			title: 'Cocteil - Сайт для интрнет магазина',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "cocteil",
-			alt: 'Cocteil',
-			text: 'Вебсайт для магазина женской одежды. Навигация на сайте сразу скрыта в меню-бургер. Есть сладер с товарами и спойлеры с вопросами. Присутсвует блок с отзывами и форма для поставщиков.'
-		},
-		{
-			id: 5,
-			photos: ['00','01','02','03','04','05','06'],
-			link: 'https://skiff26.github.io/site-delote/',
-			ghLink: 'https://github.com/skiff26/site-delote',
-			technologies: [
-				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Animations',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				}
-			],
-			title: 'Site Delote - Сайт для салона красоты',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "sitedelote",
-			alt: 'Site Delote',
-			text: 'Вебсайт для салона красоты. На сайте сразу есть меню бургер, на котором есть дополнительная информация. Есть галерея с работами, которую можно сортировать табами.'
-		},
-		{
-			id: 6,
-			photos: ['00','01','02','03','04','05','06'],
-			link: 'https://skiff26.github.io/healthyfood/',
-			ghLink: 'https://github.com/skiff26/healthyfood',
-			technologies: [
-				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
-			],
-			title: 'Healthyfood - Сайт для магазина здоровой еды',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "healthyfood",
-			alt: 'Healthyfood',
-			text: 'Этот вебсайт представляет собой онлайн-магазин, предоставляющий товары. Сайт имеет стильный дизайн с красивыми анимациями и слайдером с фотографиями.',
-			fullText: '<br>Он разбит на несколько блоков: главный экран, слайдер с картинками, инструкцию, разделы товаров, информацию о шефах, рецепты и социальные сети компании.'
-		},
-		{
-			id: 7,
-			photos: ['00','01','02','03','04','05'],
-			link: 'https://skiff26.github.io/noiceland/',
-			ghLink: 'https://github.com/skiff26/noiceland',
-			technologies: [
-				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
-			],
-			title: 'Noiceland - Сайт о новостях и важных событиях',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "noiceland",
-			alt: 'Noiceland',
-			text: 'Это вебсайт, предназначенный для публикации статей. Он выполнен в минималистическом стиле без лишних деталей, что позволяет сконцентрироваться на содержании статей.',
-			fullText: '<br>На вершине страницы расположена наиболее важная или популярная тема.'
-		},
-		{
-			id: 8,
-			photos: ['00','01','02','03','04','05','06','07'],
-			ghLink: 'https://github.com/skiff26/freebieagency',
-			link: 'https://skiff26.github.io/freebieagency/',
-			technologies: [
-				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
-			],
-			title: 'Freebie Agency - Сайт для креативной студии',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "freebieagency",
-			alt: 'Freebieagency',
-			text: 'Это вебсайт творческой студии, которая помогает стартапам развивать свой бизнес. На сайте используются нестандартные решения в дизайне и анимациях.',
-			fullText: '<br>Присутствуют табы с фильтрацией фотографий, которые позволяют легко и быстро находить нужную информацию.'
-		},
-		{
-			id: 9,
 			photos: ['00','01','02','03'],
 			link: 'https://artemkulczycki.github.io/timefrom/',
 			ghLink: 'https://github.com/artemkulczycki/timefrom/tree/gh-pages',
@@ -443,7 +191,7 @@ export default {
 			fullText: 'московском часовом поясе.'
 		},
 		{
-			id: 10,
+			id: 4,
 			photos: ['00','01','02'],
 			link: 'https://skiff26.github.io/tic-tac-toe/',
 			ghLink: 'https://github.com/skiff26/tic-tac-toe',
@@ -486,7 +234,7 @@ export default {
 			fullText: 'Все стили написаны с помощью SCSS.',
 		},
 		{
-			id: 11,
+			id: 5,
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/SpaceX/',
 			ghLink: 'https://github.com/skiff26/SpaceX',
@@ -528,7 +276,7 @@ export default {
 			text: 'Сайт на тему ракет и космоса с Three.js и canvas. Красивый и современный дизайн, интересные анимации при наведении на крупные объекты. Хороший адаптив под любые экраны. Стили написаны по методологии БЭМ.',
 		},
 		{
-			id: 12,
+			id: 6,
 			info: 'Приложение размещено на GitHub Pages, который работает только с протоколом HTTPS, тогда как сервер, с которого получаем данные, работает только с протоколом HTTP. Протокол HTTPS - это защищенный протокол, который обеспечивает безопасную передачу данных между веб-сайтом и его посетителем. Он использует шифрование для защиты конфиденциальности данных, таких как логины и пароли, а также для предотвращения несанкционированного доступа к этим данным. В связи с этим работа приложения ограничена.',
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/check-info-vue/#/location',
@@ -560,7 +308,7 @@ export default {
 			fullText: 'Input для ввода IP, с проверкой на правильность ввода, и кнопка получение информации, которая автоматически меняет свой текст от ситуации. Приложение содержит интеграцию API сторонних сервисов. Есть красивый loader.',
 		},
 		{
-			id: 13,
+			id: 7,
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/check-info-vue/#/weather',
 			ghLink: 'https://github.com/skiff26/check-info-vue',
@@ -589,6 +337,258 @@ export default {
 			alt: 'Weather',
 			text: 'WEB приложение позволяющее узнать погоду. Вводить название города можно не только по английски, но и на русском или украинском языках. Так же есть самодельный select, для быстрого выбора некоторых городов.',
 			info: 'Приложение содержит интеграцию API сторонних сервисов.'
+		},
+		{
+			id: 8,
+			photos: ['00','01','02','03','04','05','06'],
+			link: 'https://skiff26.github.io/healthyfood/',
+			ghLink: 'https://github.com/skiff26/healthyfood',
+			technologies: [
+				{ 
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
+			],
+			title: 'Healthyfood - Сайт для магазина здоровой еды',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "healthyfood",
+			alt: 'Healthyfood',
+			text: 'Этот вебсайт представляет собой онлайн-магазин, предоставляющий товары. Сайт имеет стильный дизайн с красивыми анимациями и слайдером с фотографиями.',
+			fullText: '<br>Он разбит на несколько блоков: главный экран, слайдер с картинками, инструкцию, разделы товаров, информацию о шефах, рецепты и социальные сети компании.'
+		},
+		{
+			id: 9,
+			photos: ['00','01','02','03','04','05'],
+			link: 'https://skiff26.github.io/noiceland/',
+			ghLink: 'https://github.com/skiff26/noiceland',
+			technologies: [
+				{ 
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
+			],
+			title: 'Noiceland - Сайт о новостях и важных событиях',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "noiceland",
+			alt: 'Noiceland',
+			text: 'Это вебсайт, предназначенный для публикации статей. Он выполнен в минималистическом стиле без лишних деталей, что позволяет сконцентрироваться на содержании статей.',
+			fullText: '<br>На вершине страницы расположена наиболее важная или популярная тема.'
+		},
+		{
+			id: 10,
+			photos: ['00','01','02','03','04','05','06','07'],
+			ghLink: 'https://github.com/skiff26/freebieagency',
+			link: 'https://skiff26.github.io/freebieagency/',
+			technologies: [
+				{ 
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
+			],
+			title: 'Freebie Agency - Сайт для креативной студии',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "freebieagency",
+			alt: 'Freebieagency',
+			text: 'Это вебсайт творческой студии, которая помогает стартапам развивать свой бизнес. На сайте используются нестандартные решения в дизайне и анимациях.',
+			fullText: '<br>Присутствуют табы с фильтрацией фотографий, которые позволяют легко и быстро находить нужную информацию.'
+		},
+		{
+			id: 11,
+			photos: ['00','01','02','03','04','05','06'],
+			technologies: [
+				{ 
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Animations',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				}
+			],
+			ghLink: 'https://github.com/skiff26/ytyt',
+			link: 'https://skiff26.github.io/ytyt/',
+			title: 'YtYt - Сайт для школы программирования',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "ytyt",
+			alt: 'YtYt',
+			text: 'Это вебсайт школы программирования с красивым и приятным дизайном, содержащий небольшие анимации. Сайт разбит на конкретные блоки, которые интуитивно понятны и соблазняют на приобретение курсов.',
+			fullText: '<br>Он предлагает информацию об услугах и программах обучения.'
+		},
+		{
+			id: 12,
+			photos: ['00','01','02','03','04','05','06','07','08','09'],
+			link: 'https://skiff26.github.io/Cocteil/',
+			ghLink: 'https://github.com/skiff26/Cocteil',
+			technologies: [
+				{ 
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Animations',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				}
+			],
+			title: 'Cocteil - Сайт для интрнет магазина',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "cocteil",
+			alt: 'Cocteil',
+			text: 'Вебсайт для магазина женской одежды. Навигация на сайте сразу скрыта в меню-бургер. Есть сладер с товарами и спойлеры с вопросами. Присутсвует блок с отзывами и форма для поставщиков.'
+		},
+		{
+			id: 13,
+			photos: ['00','01','02','03','04','05','06'],
+			link: 'https://skiff26.github.io/site-delote/',
+			ghLink: 'https://github.com/skiff26/site-delote',
+			technologies: [
+				{ 
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Animations',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				}
+			],
+			title: 'Site Delote - Сайт для салона красоты',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "sitedelote",
+			alt: 'Site Delote',
+			text: 'Вебсайт для салона красоты. На сайте сразу есть меню бургер, на котором есть дополнительная информация. Есть галерея с работами, которую можно сортировать табами.'
 		},
 	]
 }

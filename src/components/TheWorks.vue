@@ -36,7 +36,7 @@ export default {
 		return {
 			isShownMore: false,
 			sorted: false,
-			featurs: [0,1,2,6,7,8,9,11],
+			featurs: [0,1,2,8,9,10],
 			posts: [],
 			otherPosts: [],
 		}

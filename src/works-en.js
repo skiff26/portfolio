@@ -145,258 +145,6 @@ export default {
 	otherPosts: [
 		{
 			id: 3,
-			photos: ['00','01','02','03','04','05','06'],
-			technologies: [
-				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Animations',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				}
-			],
-			ghLink: 'https://github.com/skiff26/ytyt',
-			link: 'https://skiff26.github.io/ytyt/',
-			title: 'YtYt - Website for a Programming School',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "ytyt",
-			alt: 'YtYt',
-			text: 'This is a programming school website with a beautiful and pleasant design that includes small animations. The site is divided into specific blocks that are intuitive and tempting to purchase courses.',
-			fullText: '<br>It offers information about services and educational programs.'
-		},
-		{
-			id: 4,
-			photos: ['00','01','02','03','04','05','06','07','08','09'],
-			link: 'https://skiff26.github.io/Cocteil/',
-			ghLink: 'https://github.com/skiff26/Cocteil',
-			technologies: [
-				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{ 
-				bgColor: '',
-				technology: 'SCSS',
-				},
-				{
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Animations',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				}
-			],
-			title: 'Cocktail - A website for an online store',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "cocteil",
-			alt: 'Cocteil',
-			text: 'A website for a women`s clothing store. The navigation on the site is immediately hidden in a burger menu. There is a slider with products and spoilers with questions. There is also a block with reviews and a form for suppliers.'
-		},
-		{
-			id: 5,
-			photos: ['00','01','02','03','04','05','06'],
-			link: 'https://skiff26.github.io/site-delote/',
-			ghLink: 'https://github.com/skiff26/site-delote',
-			technologies: [
-				{ 
-				bgColor: '',
-				technology: 'HTML5',
-				},
-				{ 
-				bgColor: '',
-				technology: 'CSS3',
-				},
-				{
-				bgColor: '',
-				technology: 'BEM',
-				},
-				{ 
-				bgColor: '',
-				technology: 'JavaScript',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Animations',
-				},
-				{ 
-				bgColor: '',
-				technology: 'Adaptive',
-				}
-			],
-			title: 'Site Delote - A website for a beauty salon',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "sitedelote",
-			alt: 'Site Delote',
-			text: 'A website for a beauty salon. The site has an immediate burger menu with additional information. There is a gallery of works that can be sorted by tabs.'
-		},
-		{
-			id: 6,
-			photos: ['00','01','02','03','04','05','06'],
-			link: 'https://skiff26.github.io/healthyfood/',
-			ghLink: 'https://github.com/skiff26/healthyfood',
-			technologies: [
-				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
-			],
-			title: 'Healthyfood - Website for a Healthy Food Store',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "healthyfood",
-			alt: 'Healthyfood',
-			text: 'This website is an online store that offers various products. It has a stylish design with beautiful animations and a slider featuring photos. The website is divided into several sections, including the main screen, a slider with images, instructions',
-			fullText: 'product sections, information about chefs, recipes, and the company`s social media pages.'
-		},
-		{
-			id: 7,
-			photos: ['00','01','02','03','04','05'],
-			link: 'https://skiff26.github.io/noiceland/',
-			ghLink: 'https://github.com/skiff26/noiceland',
-			technologies: [
-				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
-			],
-			title: 'Noiceland - Website about News and Important Events',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "noiceland",
-			alt: 'Noiceland',
-			text: 'This website is designed for publishing articles in a minimalist style, without any unnecessary details that might distract from the content. The focus is on the articles themselves, allowing readers to fully concentrate on the written material.',
-			fullText: '<br>At the top of the page, the most important or popular topic is highlighted for easy access.'
-		},
-		{
-			id: 8,
-			photos: ['00','01','02','03','04','05','06','07'],
-			ghLink: 'https://github.com/skiff26/freebieagency',
-			link: 'https://skiff26.github.io/freebieagency/',
-			technologies: [
-				{ 
-					bgColor: '',
-					technology: 'HTML5',
-					},
-					{ 
-					bgColor: '',
-					technology: 'CSS3',
-					},
-					{ 
-					bgColor: '',
-					technology: 'SCSS',
-					},
-					{ 
-					bgColor: '',
-					technology: 'BEM',
-					},
-					{ 
-					bgColor: '',
-					technology: 'JavaScript',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Animations',
-					},
-					{ 
-					bgColor: '',
-					technology: 'Adaptive',
-					}
-			],
-			title: 'Freebie Agency - Website for a creative agency',
-			theme: 'HTML codding',
-			year: '2022',
-			path: "freebieagency",
-			alt: 'Freebieagency',
-			text: 'This is a website for a creative studio that helps startups grow their business. The site features unconventional design solutions and animations.',
-			fullText: '<br>There are tabs with photo filters that allow users to easily and quickly find the information they need.'
-		},
-		{
-			id: 9,
 			photos: ['00','01','02','03'],
 			link: 'https://artemkulczycki.github.io/timefrom/',
 			ghLink: 'https://github.com/artemkulczycki/timefrom/tree/gh-pages',
@@ -443,7 +191,7 @@ export default {
 			info: 'The application works in the Moscow time zone.'
 		},
 		{
-			id: 10,
+			id: 4,
 			photos: ['00','01','02'],
 			link: 'https://skiff26.github.io/tic-tac-toe/',
 			ghLink: 'https://github.com/skiff26/tic-tac-toe',
@@ -486,7 +234,7 @@ export default {
 			fullText: 'All styles are written using SCSS.',
 		},
 		{
-			id: 11,
+			id: 5,
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/SpaceX/',
 			ghLink: 'https://github.com/skiff26/SpaceX',
@@ -528,7 +276,7 @@ export default {
 			text: 'This is a website about rockets and space made with Three.js and canvas. It has a beautiful and modern design, interesting animations when hovering over large objects, and good responsiveness for any screen size. The styles are written using the BEM methodology.',
 		},
 		{
-			id: 12,
+			id: 6,
 			info: 'The application is hosted on GitHub Pages, which only works with the HTTPS protocol, while the server from which we receive data only works with the HTTP protocol. HTTPS is a secure protocol that provides a secure transfer of data between a website and its visitors. It uses encryption to protect the confidentiality of data such as usernames and passwords, as well as to prevent unauthorized access to this data. Therefore, the functionality of the application is limited due to this restriction.',
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/check-info-vue/#/location',
@@ -560,7 +308,7 @@ export default {
 			fullText: 'The input field for entering the IP address includes validation, and there is a button to retrieve information, which automatically changes its text depending on the situation. The application includes integration with third-party API services and features a beautiful loader.',
 		},
 		{
-			id: 13,
+			id: 7,
 			photos: ['00','01','02','03'],
 			link: 'https://skiff26.github.io/check-info-vue/#/weather',
 			ghLink: 'https://github.com/skiff26/check-info-vue',
@@ -590,6 +338,258 @@ export default {
 			text: 'This is a web application that allows you to get weather information. You can enter the name of the city not only in English but also in Russian or Ukrainian languages. There is also a homemade select option for quickly choosing some cities.',
 			fullText: 'The application includes integration with third-party API services.',
 			info: 'This application includes integration with third-party API services..'
+		},
+		{
+			id: 8,
+			photos: ['00','01','02','03','04','05','06'],
+			link: 'https://skiff26.github.io/healthyfood/',
+			ghLink: 'https://github.com/skiff26/healthyfood',
+			technologies: [
+				{ 
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
+			],
+			title: 'Healthyfood - Website for a Healthy Food Store',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "healthyfood",
+			alt: 'Healthyfood',
+			text: 'This website is an online store that offers various products. It has a stylish design with beautiful animations and a slider featuring photos. The website is divided into several sections, including the main screen, a slider with images, instructions',
+			fullText: 'product sections, information about chefs, recipes, and the company`s social media pages.'
+		},
+		{
+			id: 9,
+			photos: ['00','01','02','03','04','05'],
+			link: 'https://skiff26.github.io/noiceland/',
+			ghLink: 'https://github.com/skiff26/noiceland',
+			technologies: [
+				{ 
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
+			],
+			title: 'Noiceland - Website about News and Important Events',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "noiceland",
+			alt: 'Noiceland',
+			text: 'This website is designed for publishing articles in a minimalist style, without any unnecessary details that might distract from the content. The focus is on the articles themselves, allowing readers to fully concentrate on the written material.',
+			fullText: '<br>At the top of the page, the most important or popular topic is highlighted for easy access.'
+		},
+		{
+			id: 10,
+			photos: ['00','01','02','03','04','05','06','07'],
+			ghLink: 'https://github.com/skiff26/freebieagency',
+			link: 'https://skiff26.github.io/freebieagency/',
+			technologies: [
+				{ 
+					bgColor: '',
+					technology: 'HTML5',
+					},
+					{ 
+					bgColor: '',
+					technology: 'CSS3',
+					},
+					{ 
+					bgColor: '',
+					technology: 'SCSS',
+					},
+					{ 
+					bgColor: '',
+					technology: 'BEM',
+					},
+					{ 
+					bgColor: '',
+					technology: 'JavaScript',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Animations',
+					},
+					{ 
+					bgColor: '',
+					technology: 'Adaptive',
+					}
+			],
+			title: 'Freebie Agency - Website for a creative agency',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "freebieagency",
+			alt: 'Freebieagency',
+			text: 'This is a website for a creative studio that helps startups grow their business. The site features unconventional design solutions and animations.',
+			fullText: '<br>There are tabs with photo filters that allow users to easily and quickly find the information they need.'
+		},
+		{
+			id: 11,
+			photos: ['00','01','02','03','04','05','06'],
+			technologies: [
+				{ 
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Animations',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				}
+			],
+			ghLink: 'https://github.com/skiff26/ytyt',
+			link: 'https://skiff26.github.io/ytyt/',
+			title: 'YtYt - Website for a Programming School',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "ytyt",
+			alt: 'YtYt',
+			text: 'This is a programming school website with a beautiful and pleasant design that includes small animations. The site is divided into specific blocks that are intuitive and tempting to purchase courses.',
+			fullText: '<br>It offers information about services and educational programs.'
+		},
+		{
+			id: 12,
+			photos: ['00','01','02','03','04','05','06','07','08','09'],
+			link: 'https://skiff26.github.io/Cocteil/',
+			ghLink: 'https://github.com/skiff26/Cocteil',
+			technologies: [
+				{ 
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{ 
+				bgColor: '',
+				technology: 'SCSS',
+				},
+				{
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Animations',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				}
+			],
+			title: 'Cocktail - A website for an online store',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "cocteil",
+			alt: 'Cocteil',
+			text: 'A website for a women`s clothing store. The navigation on the site is immediately hidden in a burger menu. There is a slider with products and spoilers with questions. There is also a block with reviews and a form for suppliers.'
+		},
+		{
+			id: 13,
+			photos: ['00','01','02','03','04','05','06'],
+			link: 'https://skiff26.github.io/site-delote/',
+			ghLink: 'https://github.com/skiff26/site-delote',
+			technologies: [
+				{ 
+				bgColor: '',
+				technology: 'HTML5',
+				},
+				{ 
+				bgColor: '',
+				technology: 'CSS3',
+				},
+				{
+				bgColor: '',
+				technology: 'BEM',
+				},
+				{ 
+				bgColor: '',
+				technology: 'JavaScript',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Animations',
+				},
+				{ 
+				bgColor: '',
+				technology: 'Adaptive',
+				}
+			],
+			title: 'Site Delote - A website for a beauty salon',
+			theme: 'HTML codding',
+			year: '2022',
+			path: "sitedelote",
+			alt: 'Site Delote',
+			text: 'A website for a beauty salon. The site has an immediate burger menu with additional information. There is a gallery of works that can be sorted by tabs.'
 		},
 	]
 }

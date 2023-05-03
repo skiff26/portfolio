@@ -9,7 +9,7 @@
 				<div class="posts__content animate__animated animate__fadeInUp">
 					<transition-group name="works-list">
 						<article class="posts__item post-block" v-for="post in postsLang" :key="post.id">
-							<h3 class="post-block__title" @click="openDialog(post)"><a @click.prevent href="#">{{ post.title }}</a></h3>
+							<h3 class="post-block__title"><a @click.prevent href="#" @click="openDialog(post)">{{ post.title }}</a></h3>
 							<div class="post-block__info">
 								<time class="post-block__date">{{ post.date }}</time>
 								<p class="post-block__post">{{ post.category }}</p>
