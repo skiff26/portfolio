@@ -42,7 +42,14 @@ export default createStore ({
 						commit('setLang', english)
 					}
 				})
-				.catch(error => console.log(error));
+				.catch(error => console.error(error));
+		},
+		getEnlgishPosts({ commit }){
+			axios.get(`https://github.com/skiff26/db/blob/main/posts-en.json`)
+				.then ((res) => {
+					console.log(res)
+				})
+				.catch(err => console.error(err))
 		}
 	}
 })

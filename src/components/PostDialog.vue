@@ -1,6 +1,6 @@
 <template>
 	<article class="post">
-		<BaseOverlay :white="white" @click="$emit('close')" />
+		<BaseOverlay :white="true" @click="$emit('close')" />
 		<div class="post__container">
 			<button class="post__exit" @click="$emit('close')"><BaseIcon name="exit" color="white"/></button>
 			<h3 class="post__title" v-html="post.title"></h3>
@@ -11,16 +11,11 @@
 	</article>
 </template>
 <script>
-import BaseIcon from './BaseIcon.vue'
-import BaseOverlay from './BaseOverlay.vue'
+import BaseIcon from './BaseIcon.vue';
+import BaseOverlay from './BaseOverlay.vue';
 
 export default {
 	components: { BaseIcon, BaseOverlay },
-	props: ['post'],
-	data(){
-		return {
-			white: true
-		}
-	}
+	props: ['post']
 }
 </script>

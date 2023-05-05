@@ -3,7 +3,11 @@
 </template>
 <script>
 export default {
-	props: ['white']
+	props: {
+		white: {
+			type: Boolean
+		}
+	}
 }
 </script>
 <style scoped lang="scss">

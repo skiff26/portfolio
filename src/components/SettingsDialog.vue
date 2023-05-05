@@ -1,12 +1,12 @@
 <template>
 	<article class="settings">
-		<BaseOverlay :white="white" @click="$store.commit('toggleSettings')" />
+		<BaseOverlay :white="true" @click="$store.commit('toggleSettings')" />
 		<div class="settings__cont">
 			<button class="settings__exit" @click="$store.commit('toggleSettings')"><BaseIcon name="exit" wh="30" color="white"/></button>
 			<h3 class="settings__title">{{ text }}</h3>
 			<div class="settings__btns">
-			<button @click="toEnglish" :disabled="active">English</button>
-			<button @click="toRussian" :disabled="!active">Русский</button>
+				<button @click="toEnglish" :disabled="active">English</button>
+				<button @click="toRussian" :disabled="!active">Русский</button>
 			</div>
 		</div>
 	</article>
@@ -17,7 +17,6 @@ import { computed } from 'vue'
 import { useStore } from 'vuex'
 import BaseIcon from './BaseIcon.vue'
 import BaseOverlay from './BaseOverlay.vue'
-const white = true
 const store = useStore()
 const text = computed(() => {
 	return store.getters.eng 
@@ -29,7 +28,7 @@ const active = computed(() => {
 })
 
 const reload = () => {
-	if (location.hash !== "#/" && location.hash !== "#/contact") {
+	if (location.hash !== "#/") {
 		location.reload()
 	}
 }

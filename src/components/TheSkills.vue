@@ -57,21 +57,3 @@ import BaseTooltip from './BaseTooltip.vue';
 		},
 	]
 </script>
-
-<style lang="scss" scoped>
-// .skills__item {
-//   transition: all 0.4s ease;
-// }
-
-// .skills__item.v-enter,
-// .skills__item.v-leave-to {
-//   opacity: 1;
-//   transform: scale(0);
-// }
-
-// .skills__item.v-enter-active,
-// .skills__item.v-leave-active {
-//   opacity: 1;
-//   transform: scale(0);
-// }
-</style>

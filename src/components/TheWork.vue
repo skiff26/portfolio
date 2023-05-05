@@ -42,78 +42,59 @@
 		<section class="work__right">
 			<h2 class="work__second-title">{{ technologyText }}</h2>
 			<ul class="work__technologies">
-				<li class="work__technology" v-for="technology in technologies" :style="{backgroundColor: '#' + technology.bgColor, boxShadow: '0px 0px 20px 5px #' + technology.bgColor }" :key="technology">{{ technology.technology }}</li>
+				<li class="work__technology" v-for="technology in technologies" :key="technology"
+				:style="{backgroundColor: '#' + technology.bgColor, boxShadow: '0px 0px 20px 5px #' + technology.bgColor }">
+					{{ technology.technology }}
+				</li>
 			</ul>
 		</section>
 	</div>
 </template>
-<script>
-import works from '../works'
-import worksEn from '../works-en'
-import BaseIcon from '../components/BaseIcon.vue'
-import { useStore } from 'vuex'
+<script setup>
+import works from '../works';
+import worksEn from '../works-en';
+import BaseIcon from '../components/BaseIcon.vue';
+import { useStore } from 'vuex';
 import { useRoute } from 'vue-router';
-import { reactive, computed } from 'vue'
+import { computed } from 'vue';
 import { Pagination, EffectCards } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import "swiper/css"
-import 'swiper/css/pagination'
-import "swiper/css/effect-cards"
+import "swiper/css";
+import 'swiper/css/pagination';
+import "swiper/css/effect-cards";
 
-export default {
-	components: {
-		BaseIcon, Swiper, SwiperSlide
-	},
-	setup(){
-			const store = useStore()
-			let postsRu =  works.posts 
-			let otherPostsRu = works.otherPosts
-			let postsEn =  worksEn.posts 
-			let otherPostsEn = worksEn.otherPosts
-			const postId = useRoute().params.id
-			const LANGUAGE = JSON.parse(localStorage.getItem('eng'))
-			const posts_EN = [...postsEn, ...otherPostsEn]
-			const posts_RU = [...postsRu, ...otherPostsRu]	
+const store = useStore()
+let postsRu =  works.posts 
+let otherPostsRu = works.otherPosts
+let postsEn =  worksEn.posts 
+let otherPostsEn = worksEn.otherPosts
+const postId = useRoute().params.id
+const LANGUAGE = JSON.parse(localStorage.getItem('eng'))
+const posts_EN = [...postsEn, ...otherPostsEn]
+const posts_RU = [...postsRu, ...otherPostsRu]	
+const modules = [Pagination, EffectCards]
 
-			const postById = computed(() => {
-				return LANGUAGE ? posts_EN[postId] : posts_RU[postId] 
-			})
+const postById = computed(() => {
+	return LANGUAGE ? posts_EN[postId] : posts_RU[postId] 
+})
 
-			const post = postById.value
-			const photos = [...post.photos]
-			const technologies = [...post.technologies]
-			const bgColors = ['FFFF0099', 'FF990099', 'FFC0CB99', 'FFE4C499', 'FFF8DC99', 'DAA52099', 'FFA50099', 'FF450099', 'FF8C0099', 'FF634799', '8B000099', 'A0522D99', '2F4F4F99', '70809099', '0000FF99', '00FF7F99', '32CD3299', 'FF149399', 'FF69B499', 'FF00FF99', 'FF149399', 'FF6EB499', 'FF8C0099'];
+const post = postById.value
+const photos = [...post.photos]
+const technologies = [...post.technologies]
+const bgColors = ['FFFF0099', 'FF990099', 'FFC0CB99', 'FFE4C499', 'FFF8DC99', 'DAA52099', 'FFA50099', 'FF450099', 'FF8C0099', 'FF634799', '8B000099', 'A0522D99', '2F4F4F99', '70809099', '0000FF99', '00FF7F99', '32CD3299', 'FF149399', 'FF69B499', 'FF00FF99', 'FF149399', 'FF6EB499', 'FF8C0099'];
 
-			const state = reactive({
-				bgColor: '',
-			})
-
-			function generateColors() {
-				technologies.forEach(item => {
-					item.bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
-				});
-			}
-
-			const infoText = computed(() => {
-				return store.getters.eng ? 'Project information' : 'Информация о проекте'
-			})
-
-			const technologyText = computed(() => {
-				return store.getters.eng ? 'Technologies' : 'Технологии'
-			})
-
-			generateColors()
-
-			return {
-				post,
-				state,
-				photos,
-				infoText,
-				technologies,
-				technologyText,
-				modules: [Pagination, EffectCards]
-			}
-
-		}
+function generateColors() {
+	technologies.forEach(item => {
+		item.bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
+	});
 }
+generateColors()
+
+const infoText = computed(() => {
+	return store.getters.eng ? 'Project information' : 'Информация о проекте'
+})
+
+const technologyText = computed(() => {
+	return store.getters.eng ? 'Technologies' : 'Технологии'
+})
 </script>

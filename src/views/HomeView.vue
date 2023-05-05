@@ -7,9 +7,10 @@
 	</div>
 </template>
 <script>
-import TheMain from '../components/TheMain.vue'
-import TheHeader from '../components/TheHeader.vue'
-import TheFooter from '../components/TheFooter.vue'
+import resizeMixin from '@/mixins/resizeMixin';
+import TheMain from '../components/TheMain.vue';
+import TheHeader from '../components/TheHeader.vue';
+import TheFooter from '../components/TheFooter.vue';
 import TheHeaderMobile from '../components/TheHeaderMobile.vue';
 
 export default {
@@ -19,24 +20,7 @@ export default {
     TheFooter,
     TheHeaderMobile,
 	},
-	data () {
-		return {
-			isSmall: false,
-		}
-	}, 
-	methods: {
-		onResize(){
-			if(window.innerWidth < 768){
-				this.isSmall = true
-			} else {
-				this.isSmall = false
-			}
-		}
-	},
-	mounted(){
-		this.onResize()
-		addEventListener('resize', this.onResize)
-	}
+	mixins: [resizeMixin],
 }
 </script>
 <style lang="scss">

@@ -88,14 +88,3 @@ export default {
 	}
 }
 </script>
-<style scoped>
-.works-list-enter-active,
-.works-list-leave-active {
-  transition: all 0.5s ease;
-}
-.works-list-enter-from,
-.works-list-leave-to {	
-  opacity: 0;
-  transform: translateY(40px);
-}
-</style>
