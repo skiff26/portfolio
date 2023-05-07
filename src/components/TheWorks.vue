@@ -28,17 +28,17 @@
 	</section>								
 </template>
 <script>
-import { mapGetters } from 'vuex'
 import works from '../works'
 import worksEn from '../works-en'
+import { mapGetters } from 'vuex'
 export default {
 	data () {
 		return {
-			isShownMore: false,
-			sorted: false,
-			featurs: [0,1,2,8,9,10],
 			posts: [],
 			otherPosts: [],
+			sorted: false,
+			isShownMore: false,
+			featurs: [0,1,2,8,9,10],
 		}
 	},
 	methods: {
@@ -75,7 +75,6 @@ export default {
 		setLanguage(){
 			this.sorted = false
 			this.isShownMore = false
-			this.$store.dispatch('setSaveLanguage')
 			const store = this.$store.getters.eng
 			this.posts = store ? worksEn.posts : works.posts
 			this.otherPosts = store ? worksEn.otherPosts : works.otherPosts

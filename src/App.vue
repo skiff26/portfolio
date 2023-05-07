@@ -3,7 +3,6 @@ import { RouterView } from 'vue-router'
 import { useStore } from 'vuex'
 const store = useStore()
 store.dispatch('getIP')
-store.dispatch('getEnlgishPosts')
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <template>
 	<div class="wrapper">
-		<TheHeader v-if="!state.isSmall" :transparent="true"/>
+		<TheHeader v-if="!isSmall" :transparent="true"/>
 		<TheHeaderMobile v-else :transparent="true"/>
 		<main class="page">
 			<TheWork/>
@@ -13,15 +13,12 @@ import TheWork from '../components/TheWork.vue';
 import TheHeader from '../components/TheHeader.vue';
 import TheFooter from '../components/TheFooter.vue';
 import TheHeaderMobile from '../components/TheHeaderMobile.vue';
-import { reactive, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const state = reactive({
-	isSmall: false,
-	bgColor: '',
-})
+let isSmall = ref(false)
 
 const onResize = () => {
-	state.isSmall = window.innerWidth < 769
+	isSmall.value = window.innerWidth < 769
 }
 
 onMounted(() => {

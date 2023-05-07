@@ -23,5 +23,3 @@ export default {
 	mixins: [resizeMixin],
 }
 </script>
-<style lang="scss">
-</style>
