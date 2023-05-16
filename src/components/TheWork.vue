@@ -26,7 +26,7 @@
 				:pagination="true"
 				>
 					<SwiperSlide v-for="photo in photos" :key="photo">
-						<img :src="`./posts/${post.path}/${photo}.png`" @load="handleImageLoad" :alt="post.alt"/>
+						<img :src="`./posts/${post.path}/${photo}.png`" :alt="post.alt"/>
 					</SwiperSlide>
 				</Swiper>
 			</div>

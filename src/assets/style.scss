@@ -584,11 +584,9 @@ $maxWidth: 1920;
 			width: 246px;
 			height: 180px;
 			transition: all 0.3s ease;
-			border-radius: 6px;
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 		}
 		a:hover img{
-			border-radius: 6px;
 			transform: scale(1.1);
 		}
 	}
@@ -1220,13 +1218,13 @@ background: url('/img/bg.jpg') center / cover no-repeat;
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s ease;
+  transition: all .3s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-
+  filter: blur(0.6rem);
 }
 .works-list-enter-active,
 .works-list-leave-active {
