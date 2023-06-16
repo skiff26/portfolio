@@ -4,7 +4,7 @@
 			<nav class="footer__media media ">
 				<ul class="media__list">
 					<li class="media__item" :class="{'transparent': transparent}" v-for="item in media" :key="item.alt">
-						<a :href="item.link">
+						<a :href="item.link" target="_blank">
 							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16" v-html="item.path"></svg>
 						</a>
 					</li>
@@ -34,9 +34,9 @@ export default {
 					path: icons['mail'],
 				},
 				{
-					alt: 'Portfolio',
-					link: 'https://skiff26.github.io/portfolio/',
-					path: icons['website'],
+					alt: 'LinkedIn',
+					link: 'https://www.linkedin.com/in/akulchytskyi/',
+					path: icons['linkedin'],
 				},
 				{
 					label: 'Telegram',
