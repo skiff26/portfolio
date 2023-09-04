@@ -9,23 +9,30 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		@media (max-width: 900px) {
 			padding-left: 0;
 			max-width: 650px;
 			display: block;
 		}
 	}
+}
 
-	&__message {
-		flex-basis: 55%;
-		font-size: 14px;
-		line-height: 23px;
-		div {
-			svg {
-				max-width: 100%;
-				object-fit: cover;
-			}
+.hero {
+	flex-basis: 55%;
+	font-size: 14px;
+	line-height: 23px;
+	div {
+		svg {
+			max-width: 100%;
+			object-fit: cover;
 		}
+	}
+
+	h2 {
+		font-size: 30px;
+		margin: 60px 0 30px;
+		line-height: 34px;
 	}
 
 	&__info {
@@ -45,16 +52,44 @@
 		}
 	}
 
-	&__projects {
-		flex-basis: 35%;
-		h2 {
-			margin: 30px 0;
-			font-size: 30px;
-			line-height: 30px;
+	&__buttons {
+		display: flex;
+		gap: 25px;
+		a {
+			position: relative;
+			padding: 8px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #ccc;
+			transition: all .3s ease-in-out;
+			&:hover {
+				color: #fff;
+			}
+			&::after{
+				content: "";
+				height: 1px;
+				width: 100%;
+				background: linear-gradient(270deg,var(--grad-2)0%,var(--grad-1)100%);
+				opacity: 1;
+				transition: all .3s ease-in-out;
+				display: inline-block;
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				right: 0;
+			}
 		}
 	}
+}
 
-	&__projects-wrapper {
+.projects {
+	flex-basis: 35%;
+	h2 {
+		margin: 30px 0;
+		font-size: 30px;
+		line-height: 30px;
+	}
+	&__wrapper {
 		position: relative;
 		&:hover {
 			&::before {
@@ -84,8 +119,8 @@
 			background: linear-gradient(135deg,var(--grad-2)0%,var(--grad-1)50%,var(--grad-2)100%);
 		}
 	}
-
-	&__projects-list {
+	
+	&__list {
 		padding: 30px 30px 0;
 		border-top-left-radius: 8px;
 		position: relative;
@@ -109,6 +144,7 @@
 			}
 			span {
 				position: relative;
+				line-height: 1.5;
 				transition: all .3s ease-in-out;
 				&::after{
 					content: "";
@@ -124,6 +160,9 @@
 					right: 0;
 				}
 			}
+		}
+		a {
+			display: inline-block;
 		}
 	}
 }
