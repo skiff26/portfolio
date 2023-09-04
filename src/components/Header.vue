@@ -1,6 +1,6 @@
 <template>
 	<header class="header">
-		<router-link :to="{ name: 'home' }"><img src="/logo.svg" alt="Logo"></router-link>
+		<a @click="projectStore.setProject(0)"><img src="/logo.svg" alt="Logo"></a>
 		<ul class="header__links">
 			<li v-for="item of links" :key="item.name">
 				<a :href="item.link" target="_blank">
@@ -14,6 +14,8 @@
 <script setup lang="ts">
 import BaseIcon from './BaseIcon.vue'
 import type { Link } from '@/interfaces'
+import { useProjectStore } from '@/stores/ProjectStore'
+const projectStore = useProjectStore()
 
 const links: Link[] = [
 	{
@@ -39,6 +41,7 @@ const links: Link[] = [
 	z-index: 1;
 	img {
 		transition: all 0.3s ease;
+		cursor: pointer;
 		&:hover {
 			transform: scale(1.1);
 		}

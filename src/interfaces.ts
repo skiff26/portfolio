@@ -5,5 +5,12 @@ export interface Link {
 
 export interface Project {
 	name: string,
-	link: string
+	id: number
+}
+
+export interface ProjectFull {
+	id: number,
+	title: string,
+	text: string,
+	links: Link[]
 }
