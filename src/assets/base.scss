@@ -1,0 +1,112 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --grad-1: rgb(155,96,147);
+  --grad-2: rgb(204,178,61);
+}
+
+:root {
+  --color-scheme: dark;
+  --c-bg: #1d1d20;
+
+  --c-text: #d1d1d1;
+  --c-text-hover: #e9e7e7;
+}
+
+/*NULL*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/ 
+body,html{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--c-text);
+	background-color: var(--c-bg);
+	color-scheme: var(--color-scheme);
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	@media (max-width: 900px) {
+		display: block;
+		height: 100%;
+	}
+}
+.wrapper{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-height: 791px;
+	width: 100%;
+	max-width: 1280px;
+	padding: 40px;
+	position: relative;
+	user-select: none;
+	@media (max-width: 500px) {
+		padding: 23px;
+		max-height: none;
+	}
+}
+.main{
+	flex: 1 1 auto;
+}
+
+.left-top-border {
+	top: 0;
+	left: 0;
+	@media (max-width: 500px) {
+		top: -12px;
+		left: -12px;
+		svg {
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
+
+.right-bottom-border {
+	bottom: 0;
+	right: 0;
+	@media (max-width: 500px) {
+		display: none;
+	}
+}
+
+.left-top-border,
+.right-bottom-border {
+	position: absolute;
+	&:hover {
+		svg .gradient1 {
+			stop-color: var(--grad-2)
+		}
+		svg .gradient2 {
+			stop-color: var(--grad-1)
+		}
+	}
+}
+
+.gradient1 {
+	stop-color: var(--grad-1);
+	transition: all .3s ease-in-out;
+}
+
+.gradient2 {
+	stop-color: var(--grad-2);
+	transition: all .3s ease-in-out;
+}
