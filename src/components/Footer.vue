@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer">&copy;{{ year }} <a href="https://www.linkedin.com/in/akulchytskyi/" target="_blank">Artem Kulchytskyi</a></footer>
+	<footer class="footer">&copy;{{ year }} <a href="mailto:artem.kulchitsky@gmail.com">Artem Kulchytskyi</a></footer>
 </template>
 
 <script setup lang="ts">
@@ -11,6 +11,7 @@ const year: number = new Date().getFullYear()
 	position: relative;
 	z-index: 1;
 	text-align: right;
+	user-select: none;
 	font-size: 14px;
 	padding: 35px 10px 10px;
 	@media (max-width: 500px) {

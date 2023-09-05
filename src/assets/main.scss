@@ -1,4 +1,5 @@
 @import './base.scss';
+@import './animtaions.scss';
 
 .main {
 	display: flex;
@@ -33,6 +34,10 @@
 		font-size: 30px;
 		margin: 60px 0 30px;
 		line-height: 34px;
+		@media (max-width: 500px) {
+			margin: 30px 0;
+			font-size: 26px;
+		}
 	}
 
 	&__info {
@@ -64,19 +69,12 @@
 			transition: all .3s ease-in-out;
 			&:hover {
 				color: #fff;
+				&::after {
+					@extend %gradientAfterHover;
+				}
 			}
-			&::after{
-				content: "";
-				height: 1px;
-				width: 100%;
-				background: linear-gradient(270deg,var(--grad-2)0%,var(--grad-1)100%);
-				opacity: 1;
-				transition: all .3s ease-in-out;
-				display: inline-block;
-				position: absolute;
-				bottom: -2px;
-				left: 0;
-				right: 0;
+			&::after {
+				@extend %gradientAfter;
 			}
 		}
 	}
@@ -136,28 +134,21 @@
 			&:not(:last-child) {
 				margin-bottom: 15px;
 			}
-			&:hover {
-				span {
-					letter-spacing: 1px;
-					color: white;
-				}
-			}
 			span {
 				position: relative;
 				line-height: 1.5;
 				transition: all .3s ease-in-out;
-				&::after{
-					content: "";
-					height: 1px;
-					width: 100%;
-					background: linear-gradient(270deg,var(--grad-2)0%,var(--grad-1)100%);
-					opacity: 1;
-					transition: all .3s ease-in-out;
-					display: inline-block;
-					position: absolute;
-					bottom: -2px;
-					left: 0;
-					right: 0;
+				&::after {
+					@extend %gradientAfter;
+				}
+			}
+			&:hover {
+				span {
+					letter-spacing: 1px;
+					color: white;
+					&::after {
+						@extend %gradientAfterHover;
+					}
 				}
 			}
 		}

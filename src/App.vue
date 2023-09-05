@@ -7,6 +7,7 @@ import Borders from '@/components/Borders.vue'
 
 <template>
 	<div class="container">
+		<h1>Artem Kulchytskyi - Frontend Engineer</h1>
 		<div class="wrapper">
 			<Borders pos="lt" />
 			<Header />

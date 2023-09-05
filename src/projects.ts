@@ -15,8 +15,8 @@ const projects: ProjectFull[] = [
 		title: 'Minesweeper',
 		text: 'Brower Minesweeper is an engaging game with a beautiful design and sound effects. In it, you\'ll find the classic puzzle where your task is to uncover cells while avoiding mines and solving logical puzzles. This game was created with Vue 3 (Options API) and SCSS.',
 		links: [
-			{ link: 'https://github.com/skiff26/minesweeper', name: 'View Site' },
-			{ link: 'https://skiff26.github.io/minesweeper', name: 'Github'}
+			{ link: 'https://skiff26.github.io/minesweeper', name: 'View Site' },
+			{ link: 'https://github.com/skiff26/minesweeper', name: 'Github'}
 		]
 	}, 
 	{

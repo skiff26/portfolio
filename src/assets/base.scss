@@ -1,4 +1,3 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
   --grad-1: rgb(155,96,147);
   --grad-2: rgb(204,178,61);
@@ -28,7 +27,26 @@ a:hover{text-decoration:none;}
 ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
-/*--------------------*/ 
+/*--------------------*/
+
+%gradientAfter {
+	content: "";
+	height: 1px;
+	width: 100%;
+	background: linear-gradient(270deg,var(--grad-2)0%,var(--grad-1)100%);
+	opacity: 1;
+	transition: all .3s ease-in-out;
+	display: inline-block;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+}
+
+%gradientAfterHover {
+	background: linear-gradient(270deg,var(--grad-1)0%,var(--grad-2)100%);
+}
+
 body,html{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -42,6 +60,10 @@ body,html{
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	h1 {
+		position: absolute;
+		top: -100px;
+	}
 	@media (max-width: 900px) {
 		display: block;
 		height: 100%;
@@ -57,10 +79,17 @@ body,html{
 	max-width: 1280px;
 	padding: 40px;
 	position: relative;
-	user-select: none;
 	@media (max-width: 500px) {
 		padding: 23px;
 		max-height: none;
+	}
+	&:hover {
+		.gradient1 {
+			stop-color: var(--grad-2)
+		}
+		.gradient2 {
+			stop-color: var(--grad-1)
+		}
 	}
 }
 .main{
@@ -68,6 +97,7 @@ body,html{
 }
 
 .left-top-border {
+	position: absolute;
 	top: 0;
 	left: 0;
 	@media (max-width: 500px) {
@@ -81,23 +111,11 @@ body,html{
 }
 
 .right-bottom-border {
+	position: absolute;
 	bottom: 0;
 	right: 0;
 	@media (max-width: 500px) {
 		display: none;
-	}
-}
-
-.left-top-border,
-.right-bottom-border {
-	position: absolute;
-	&:hover {
-		svg .gradient1 {
-			stop-color: var(--grad-2)
-		}
-		svg .gradient2 {
-			stop-color: var(--grad-1)
-		}
 	}
 }
 

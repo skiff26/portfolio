@@ -1,6 +1,6 @@
 <template>
 	<header class="header">
-		<a @click="projectStore.setProject(0)"><img src="/logo.svg" alt="Logo"></a>
+		<div @click="projectStore.setProject(0)"><img src="/logo.svg" alt="Logo"></div>
 		<ul class="header__links">
 			<li v-for="item of links" :key="item.name">
 				<a :href="item.link" target="_blank">
@@ -19,8 +19,8 @@ const projectStore = useProjectStore()
 
 const links: Link[] = [
 	{
-		name: 'mail',
-		link: 'mailto:artem.kulchitsky@gmail.com'
+		name: 'telegram',
+		link: 'https://t.me/id00909'
 	},
 	{
 		name: 'github',
@@ -38,6 +38,7 @@ const links: Link[] = [
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	user-select: none;
 	z-index: 1;
 	img {
 		transition: all 0.3s ease;
