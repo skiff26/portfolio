@@ -3,6 +3,8 @@ import { RouterView } from 'vue-router'
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import Borders from '@/components/Borders.vue'
+import { setGradientVariables } from '@/utils/gradient'
+setGradientVariables()
 </script>
 
 <template>
@@ -11,7 +13,9 @@ import Borders from '@/components/Borders.vue'
 		<div class="wrapper">
 			<Borders pos="lt" />
 			<Header />
-			<RouterView />
+			<transition name="fade" mode="out-in" appear>
+				<RouterView />
+			</transition>
 			<Footer />
 			<Borders pos="rb" />
 		</div>

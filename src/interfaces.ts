@@ -14,3 +14,8 @@ export interface ProjectFull {
 	text: string,
 	links: Link[]
 }
+
+export interface Gradient {
+	grad1: string,
+	grad2: string
+}

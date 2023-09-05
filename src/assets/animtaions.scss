@@ -44,9 +44,9 @@
  
 #welcome_path {
 	-webkit-animation: animate-svg-stroke-1 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-								animate-svg-fill-1 0.5s linear 1.2s both;
+								animate-svg-fill-1 0.5s linear 1.5s both;
 				animation: animate-svg-stroke-1 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-						animate-svg-fill-1 0.5s linear 1.2s both;
+						animate-svg-fill-1 0.5s linear 1.5s both;
 }
 
 .open-enter-active,
@@ -61,4 +61,14 @@
 	opacity: 0;
 	transform-origin: 100%;
 	transform: rotateY(90deg);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
 }
