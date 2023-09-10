@@ -1,6 +1,6 @@
 <template>
 	<aside class="projects">
-		<h2>Projects</h2>
+		<h2>{{ $t('projects') }}</h2>
 		<div class="projects__wrapper">
 			<div class="projects__list">
 				<button v-for="project of projects" :key="project.name" @click="setProject(project.id)">
