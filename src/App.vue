@@ -13,9 +13,11 @@ setGradientVariables()
 		<div class="wrapper">
 			<Borders pos="lt" />
 			<Header />
-			<transition name="fade" mode="out-in" appear>
-				<RouterView />
-			</transition>
+			<RouterView v-slot="{ Component }">
+				<transition name="fade" mode="out-in" appear>
+					<component :is="Component" />
+				</transition>
+			</RouterView>
 			<Footer />
 			<Borders pos="rb" />
 		</div>
