@@ -19,3 +19,8 @@ export interface Gradient {
 	grad1: string,
 	grad2: string
 }
+
+export interface Lang {
+	name: string,
+	code: string
+}

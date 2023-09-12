@@ -1,8 +1,12 @@
 <template>
-	<footer class="footer">&copy;{{ year }} <a href="mailto:artem.kulchitsky@gmail.com">Artem Kulchytskyi</a></footer>
+	<footer class="footer">
+		<LanguageSwitcher />
+		<p>&copy;{{ year }} <a href="mailto:artem.kulchitsky@gmail.com">Artem Kulchytskyi</a></p>
+	</footer>
 </template>
 
 <script setup lang="ts">
+import LanguageSwitcher from './LanguageSwitcher.vue'
 const year: number = new Date().getFullYear()
 </script>
 
@@ -13,7 +17,7 @@ const year: number = new Date().getFullYear()
 	text-align: right;
 	user-select: none;
 	font-size: 14px;
-	padding: 35px 10px 10px;
+	padding: 20px 10px 10px;
 	@media (max-width: 500px) {
 		padding: 35px 0 0;
 		text-align: center;
