@@ -1,9 +1,9 @@
-import { RouterView, createRouter, createWebHistory } from 'vue-router'
+import { RouterView, createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import { routeMiddleware } from '@/i18n/translation'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
 		path: '/:locale?',
