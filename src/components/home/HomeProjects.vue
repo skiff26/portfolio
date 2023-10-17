@@ -15,9 +15,14 @@
 <script setup lang="ts">
 import type { Project } from '@/interfaces'
 import { useProjectStore } from '@/stores/ProjectStore'
+import { setGradientVariables } from '@/utils/gradient'
 const projectStore = useProjectStore()
 
-const setProject = (id: number) => projectStore.setProject(id)
+
+const setProject = (id: number) => {
+	projectStore.setProject(id)
+	setGradientVariables()
+}
 
 const projects: Project[] = [
 	{
@@ -26,10 +31,14 @@ const projects: Project[] = [
 	},
 	{
 		id: 2,
-		name: 'Minesweeper'
+		name: 'GuessRegion'
 	},
 	{
 		id: 3,
+		name: 'Minesweeper'
+	},
+	{
+		id: 4,
 		name: 'Timefrom'
 	}
 ]
