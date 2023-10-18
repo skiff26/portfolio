@@ -19,7 +19,7 @@ interface Props {
 
 const { name, wh, color } = defineProps<Props>()
 
-const iconsPaths: Record<string, string> = icons;
+const iconsPaths: Record<string, string> = icons
 
 const path = ref(iconsPaths[name])
 </script>
