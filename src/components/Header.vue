@@ -4,7 +4,7 @@
 		<ul class="header__links">
 			<li v-for="item of links" :key="item.name">
 				<a :href="item.link" target="_blank">
-					<BaseIcon :name="item.name" wh="25.25"/>
+					<BaseIcon :name="item.name" wh="25.25" />
 				</a>
 			</li>
 		</ul>
@@ -40,21 +40,26 @@ const links: Link[] = [
 	position: relative;
 	user-select: none;
 	z-index: 1;
+
 	img {
 		transition: all 0.3s ease;
 		cursor: pointer;
+
 		&:hover {
 			transform: scale(1.1);
 		}
 	}
+
 	&__links {
 		display: flex;
 		gap: 30px;
+
 		li a svg {
 			transition: all 0.3s ease 0s;
+
 			&:hover {
 				fill: white;
-			} 
+			}
 		}
 	}
 }

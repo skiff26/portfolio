@@ -6,16 +6,16 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
-		path: '/:locale?',
-		component: RouterView,
-		beforeEnter: routeMiddleware,
-		children: [
-			{
-				path: '',
-				name: 'home',
-				component: HomeView
-			}
-		]
+      path: '/:locale?',
+      component: RouterView,
+      beforeEnter: routeMiddleware,
+      children: [
+        {
+          path: '',
+          name: 'home',
+          component: HomeView
+        }
+      ]
     }
   ]
 })

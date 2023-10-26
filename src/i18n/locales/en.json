@@ -1,11 +1,11 @@
 {
-	"firstPar": "My name is Artem Kulchytskyi, I'm a front-end developer based in Warsaw, Poland. I have developed many types of front-ends from web games to large online stores and Vue.js libraries.",
-	"secondPar": "I'm passionate about creating complex and visually appealing interfaces with a strong emphasis on high performance.",
-	"projects": {
-		"title": "Projects",
-		"library": "This is a library of pre-built drag-and-drop components for Vue.js. The primary objective is to facilitate the seamless integration of the library's components into a user's project without requiring any additional dependencies. These components are constructed using Vue 3 (Composition API) and are accompanied by unit tests.",
-		"guessregion": "This is a Ukrainian browser quiz game. It allows you to explore regions using license plate numbers. The game is available in two languages: Ukrainian and English. The technology stack includes Nuxt 3 for the frontend and Node.js (Express) for the backend. The git repository for this one is private at the moment.",
-		"minesweeper": "Brower Minesweeper is an engaging game with a beautiful design and sound effects. In it, you'll find the classic puzzle where your task is to uncover cells while avoiding mines and solving logical puzzles. This game was created with Vue 3 (Options API) and SCSS.",
-		"timefrom": "This is a web application for supporting Complaint-Reviewing administrators for RAGMIR GAMES. With this application, administrators can check how much time has passed since a specific date. It operates in the Moscow time zone and was built using Vue 3 and PrimeVue."
-	}
+  "firstPar": "My name is Artem Kulchytskyi, I'm a front-end developer based in Warsaw, Poland. I have developed many types of front-ends from web games to large online stores and Vue.js libraries.",
+  "secondPar": "I'm passionate about creating complex and visually appealing interfaces with a strong emphasis on high performance.",
+  "projects": {
+    "title": "Projects",
+    "library": "This is a library of pre-built drag-and-drop components for Vue.js. The primary objective is to facilitate the seamless integration of the library's components into a user's project without requiring any additional dependencies. These components are constructed using Vue 3 (Composition API) and are accompanied by unit tests.",
+    "guessregion": "This is a Ukrainian browser quiz game. It allows you to explore regions using license plate numbers. The game is available in two languages: Ukrainian and English. The technology stack includes Nuxt 3 for the frontend and Node.js (Express) for the backend. The git repository for this one is private at the moment.",
+    "minesweeper": "Brower Minesweeper is an engaging game with a beautiful design and sound effects. In it, you'll find the classic puzzle where your task is to uncover cells while avoiding mines and solving logical puzzles. This game was created with Vue 3 (Options API) and SCSS.",
+    "timefrom": "This is a web application for supporting Complaint-Reviewing administrators for RAGMIR GAMES. With this application, administrators can check how much time has passed since a specific date. It operates in the Moscow time zone and was built using Vue 3 and PrimeVue."
+  }
 }

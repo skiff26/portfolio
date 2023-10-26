@@ -1,26 +1,26 @@
 export interface Link {
-	name: string,
-	link: string
+  name: string
+  link: string
 }
 
 export interface Project {
-	name: string,
-	id: number
+  name: string
+  id: number
 }
 
 export interface ProjectFull {
-	id: number,
-	title: string,
-	text: string,
-	links: Link[]
+  id: number
+  title: string
+  text: string
+  links: Link[]
 }
 
 export interface Gradient {
-	grad1: string,
-	grad2: string
+  grad1: string
+  grad2: string
 }
 
 export interface Lang {
-	name: string,
-	code: string
+  name: string
+  code: string
 }

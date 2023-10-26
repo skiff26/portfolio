@@ -1,11 +1,6 @@
 <template>
 	<div class="languages">
-		<button 
-			v-for="lang in languages" 
-			:key="lang.code" 
-			:disabled="lang.code === locale"
-			@click="switchLocale(lang.code)"
-			>
+		<button v-for="lang in languages" :key="lang.code" :disabled="lang.code === locale" @click="switchLocale(lang.code)">
 			{{ lang.name }}
 		</button>
 	</div>
@@ -43,19 +38,23 @@ const switchLocale = (code: string) => {
 	justify-content: end;
 	margin-bottom: 15px;
 	gap: 15px;
+
 	@media (max-width: 500px) {
 		justify-content: center;
 	}
+
 	button {
 		background-color: transparent;
 		color: var(--c-text);
 		transition: all 0.3s ease;
+
 		&:hover {
 			color: var(--c-text-hover);
 		}
 	}
+
 	button:disabled {
 		opacity: 0.6;
 	}
-}	
+}
 </style>
