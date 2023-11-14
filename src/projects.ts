@@ -15,6 +15,17 @@ const projects: ProjectFull[] = [
   },
   {
     id: 2,
+    title: 'Vue.js Accurate Timer',
+    get text() {
+      return i18n.global.t('projects.timer')
+    },
+    links: [
+      { link: 'https://skiff26.github.io/vue-timer/', name: 'View Site' },
+      { link: 'https://github.com/skiff26/vue-timer', name: 'Github' }
+    ]
+  },
+  {
+    id: 3,
     title: 'GuessRegion',
     get text() {
       return i18n.global.t('projects.guessregion')
@@ -22,7 +33,7 @@ const projects: ProjectFull[] = [
     links: [{ link: 'https://guessregion.netlify.app/', name: 'View Site' }]
   },
   {
-    id: 3,
+    id: 4,
     title: 'Minesweeper',
     get text() {
       return i18n.global.t('projects.minesweeper')
@@ -33,7 +44,7 @@ const projects: ProjectFull[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: 'Timefrom',
     get text() {
       return i18n.global.t('projects.timefrom')

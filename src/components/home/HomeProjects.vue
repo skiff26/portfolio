@@ -6,7 +6,6 @@
 				<button v-for="project of projects" :key="project.name" @click="setProject(project.id)">
 					<span>{{ project.name }}</span>
 				</button>
-				<a href="https://skiff26.github.io/old-portfolio/" target="_blank"><span>Old Portfolio &#8599;</span></a>
 			</div>
 		</div>
 	</aside>
@@ -31,14 +30,18 @@ const projects: Project[] = [
 	},
 	{
 		id: 2,
-		name: 'GuessRegion'
+		name: 'Vue.js Accurate Timer'
 	},
 	{
 		id: 3,
-		name: 'Minesweeper'
+		name: 'GuessRegion'
 	},
 	{
 		id: 4,
+		name: 'Minesweeper'
+	},
+	{
+		id: 5,
 		name: 'Timefrom'
 	}
 ]
