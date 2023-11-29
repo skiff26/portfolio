@@ -10,7 +10,11 @@ const projects: ProjectFull[] = [
     },
     links: [
       { link: 'https://skiff26.github.io/dragdrop', name: 'View Site' },
-      { link: 'https://github.com/skiff26/dragdrop', name: 'Github' }
+      { link: 'https://github.com/skiff26/dragdrop', name: 'Github' },
+      {
+        link: 'https://vuejsexamples.com/drag-and-drop-components-for-vue-js/',
+        name: 'Vue.js Examples'
+      }
     ]
   },
   {

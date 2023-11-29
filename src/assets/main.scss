@@ -59,7 +59,9 @@
 
   &__buttons {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 15px;
     a {
       position: relative;
       padding: 8px;
@@ -67,6 +69,7 @@
       font-weight: bold;
       color: #ccc;
       transition: all 0.3s ease-in-out;
+      white-space: nowrap;
       &:hover {
         color: #fff;
         &::after {
