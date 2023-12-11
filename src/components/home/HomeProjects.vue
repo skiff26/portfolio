@@ -38,11 +38,11 @@ const projects: Project[] = [
 	},
 	{
 		id: 4,
-		name: 'Minesweeper'
+		name: 'Timefrom'
 	},
 	{
 		id: 5,
-		name: 'Timefrom'
+		name: 'GTA UI'
 	}
 ]
 </script>

@@ -20,7 +20,9 @@ export interface Gradient {
   grad2: string
 }
 
+export type LocaleCode = 'uk' | 'en'
+
 export interface Lang {
   name: string
-  code: string
+  code: LocaleCode
 }

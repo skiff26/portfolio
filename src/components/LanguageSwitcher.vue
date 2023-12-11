@@ -9,9 +9,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
-import type { Lang } from '@/interfaces'
+import type { Lang, LocaleCode } from '@/interfaces'
 import { changeLocale } from '@/i18n/translation'
-
 const { locale } = useI18n()
 const router = useRouter()
 
@@ -20,7 +19,7 @@ const languages: Lang[] = [
 	{ name: 'Українська', code: 'uk' }
 ]
 
-const switchLocale = (code: string) => {
+const switchLocale = (code: LocaleCode) => {
 	changeLocale(code)
 
 	try {

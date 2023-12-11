@@ -38,17 +38,6 @@ const projects: ProjectFull[] = [
   },
   {
     id: 4,
-    title: 'Minesweeper',
-    get text() {
-      return i18n.global.t('projects.minesweeper')
-    },
-    links: [
-      { link: 'https://skiff26.github.io/minesweeper', name: 'View Site' },
-      { link: 'https://github.com/skiff26/minesweeper', name: 'Github' }
-    ]
-  },
-  {
-    id: 5,
     title: 'Timefrom',
     get text() {
       return i18n.global.t('projects.timefrom')
@@ -56,6 +45,17 @@ const projects: ProjectFull[] = [
     links: [
       { link: 'https://artemkulczycki.github.io/timefrom/', name: 'View Site' },
       { link: 'https://github.com/artemkulczycki/timefrom', name: 'Github' }
+    ]
+  },
+  {
+    id: 5,
+    title: 'GTA UI',
+    get text() {
+      return i18n.global.t('projects.gta')
+    },
+    links: [
+      { link: 'https://gta-ui.netlify.app/', name: 'View Site' },
+      { link: 'https://github.com/skiff26/gta-ui', name: 'Github' }
     ]
   }
 ]
