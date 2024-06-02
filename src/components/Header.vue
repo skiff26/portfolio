@@ -20,7 +20,7 @@ const projectStore = useProjectStore()
 const links: Link[] = [
 	{
 		name: 'telegram',
-		link: 'https://t.me/id00909'
+		link: 'https://t.me/skiff_16'
 	},
 	{
 		name: 'github',
