@@ -43,10 +43,11 @@
 }
 
 #welcome_path {
-  -webkit-animation: animate-svg-stroke-1 2s cubic-bezier(0.47, 0, 0.745, 0.715)
-      0s both,
+  -webkit-animation:
+    animate-svg-stroke-1 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
     animate-svg-fill-1 0.5s linear 1.5s both;
-  animation: animate-svg-stroke-1 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+  animation:
+    animate-svg-stroke-1 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
     animate-svg-fill-1 0.5s linear 1.5s both;
 }
 

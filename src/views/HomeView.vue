@@ -4,10 +4,10 @@ import HomeProjects from '@/components/home/HomeProjects.vue'
 </script>
 
 <template>
-	<main class="main">
-		<div class="main__container">
-			<HomeMessage />
-			<HomeProjects />
-		</div>
-	</main>
+  <main class="main">
+    <div class="main__container">
+      <HomeMessage />
+      <HomeProjects />
+    </div>
+  </main>
 </template>

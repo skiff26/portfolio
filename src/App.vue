@@ -8,18 +8,18 @@ setGradientVariables()
 </script>
 
 <template>
-	<div class="container">
-		<h1>Artem Kulchytskyi - Frontend Engineer</h1>
-		<div class="wrapper">
-			<Borders pos="lt" />
-			<Header />
-			<RouterView v-slot="{ Component }">
-				<transition name="fade" mode="out-in" appear>
-					<component :is="Component" />
-				</transition>
-			</RouterView>
-			<Footer />
-			<Borders pos="rb" />
-		</div>
-	</div>
+  <div class="container">
+    <h1>Artem Kulchytskyi - Frontend Engineer</h1>
+    <div class="wrapper">
+      <Borders pos="lt" />
+      <Header />
+      <RouterView v-slot="{ Component }">
+        <transition name="fade" mode="out-in" appear>
+          <component :is="Component" />
+        </transition>
+      </RouterView>
+      <Footer />
+      <Borders pos="rb" />
+    </div>
+  </div>
 </template>

@@ -1,9 +1,14 @@
 <template>
-	<div class="languages">
-		<button v-for="lang in languages" :key="lang.code" :disabled="lang.code === locale" @click="switchLocale(lang.code)">
-			{{ lang.name }}
-		</button>
-	</div>
+  <div class="languages">
+    <button
+      v-for="lang in languages"
+      :key="lang.code"
+      :disabled="lang.code === locale"
+      @click="switchLocale(lang.code)"
+    >
+      {{ lang.name }}
+    </button>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -15,45 +20,45 @@ const { locale } = useI18n()
 const router = useRouter()
 
 const languages: Lang[] = [
-	{ name: 'English', code: 'en' },
-	{ name: 'Українська', code: 'uk' }
+  { name: 'English', code: 'en' },
+  { name: 'Українська', code: 'uk' }
 ]
 
 const switchLocale = (code: LocaleCode) => {
-	changeLocale(code)
+  changeLocale(code)
 
-	try {
-		router.replace({ params: { locale: code } })
-	} catch (e) {
-		console.log(e)
-		router.push('/')
-	}
+  try {
+    router.replace({ params: { locale: code } })
+  } catch (e) {
+    console.log(e)
+    router.push('/')
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .languages {
-	display: flex;
-	justify-content: end;
-	margin-bottom: 15px;
-	gap: 15px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 15px;
+  gap: 15px;
 
-	@media (max-width: 500px) {
-		justify-content: center;
-	}
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
 
-	button {
-		background-color: transparent;
-		color: var(--c-text);
-		transition: all 0.3s ease;
+  button {
+    background-color: transparent;
+    color: var(--c-text);
+    transition: all 0.3s ease;
 
-		&:hover {
-			color: var(--c-text-hover);
-		}
-	}
+    &:hover {
+      color: var(--c-text-hover);
+    }
+  }
 
-	button:disabled {
-		opacity: 0.6;
-	}
+  button:disabled {
+    opacity: 0.6;
+  }
 }
 </style>
